@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Tabbed Navigation Example</title>
+  <title>Tabbed Navigation</title>
   <style>
+    body {
+      font-family: 'Press Start 2P-Regular';
+      src: url(MeganMulcahy.github.io/PressStart2P-Regular.ttf)
+    }
+
+    .container {
+      display: flex;
+      align-items: baseline;
+    }
+    
     .tabs {
       list-style-type: none;
       margin: 0;
-      padding: 0;
-      overflow: hidden;
-      float: right;
+      padding: 20px;
+      display: flex;
     }
     
     .tabs li {
-      display: inline-block;
       margin-right: 10px;
       cursor: pointer;
       padding-bottom: 2px;
@@ -20,7 +28,7 @@
     }
     
     .tabs li.active {
-      border-bottom-color: blue;
+      border-bottom-color: black;
     }
     
     .content {
@@ -42,12 +50,14 @@
   </script>
 </head>
 <body>
-  <h1>Static Word</h1>
-  <ul class="tabs">
-    <li class="tab" onclick="setActiveTab(0)"><span>Tab 1</span></li>
-    <li class="tab" onclick="setActiveTab(1)"><span>Tab 2</span></li>
-    <li class="tab" onclick="setActiveTab(2)"><span>Tab 3</span></li>
-  </ul>
+  <div class="container">
+    <h1>Static Word</h1>
+    <ul class="tabs">
+      <li class="tab" onclick="setActiveTab(0)">Tab 1</li>
+      <li class="tab" onclick="setActiveTab(1)">Tab 2</li>
+      <li class="tab" onclick="setActiveTab(2)">Tab 3</li>
+    </ul>
+  </div>
   
   <div class="content">
     <div id="tab1" class="tab-content" style="display: none;">
