@@ -1,11 +1,11 @@
 @font-face {
-    font-family: 'Press Start 2P-Regular';
-    src: url(PressStart2P-Regular.ttf);
+    font-family: 'CormorantGaramond-L';
+    src: url(CormorantGaramond-Light.ttf);
 }
 
 body {
-    font-family: 'Press Start 2P-Regular';
-    font-size: 10px;
+    font-family: 'CormorantGaramond-L';
+    font-size: 15px;
 }
 
 .container {
