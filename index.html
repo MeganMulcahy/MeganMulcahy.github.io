@@ -1,1 +1,86 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tabbed Navigation Example</title>
+  <style>
+    .tabs {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      float: right;
+    }
+    
+    .tabs li {
+      display: inline-block;
+      margin-right: 10px;
+      cursor: pointer;
+      padding-bottom: 2px;
+      border-bottom: 2px solid transparent;
+    }
+    
+    .tabs li.active {
+      border-bottom-color: blue;
+    }
+    
+    .content {
+      margin-top: 40px;
+      text-align: center;
+    }
+  </style>
+  <script>
+    function setActiveTab(index) {
+      var tabs = document.getElementsByClassName('tab');
+      for (var i = 0; i < tabs.length; i++) {
+        if (i === index) {
+          tabs[i].classList.add('active');
+        } else {
+          tabs[i].classList.remove('active');
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Static Word</h1>
+  <ul class="tabs">
+    <li class="tab" onclick="setActiveTab(0)"><span>Tab 1</span></li>
+    <li class="tab" onclick="setActiveTab(1)"><span>Tab 2</span></li>
+    <li class="tab" onclick="setActiveTab(2)"><span>Tab 3</span></li>
+  </ul>
+  
+  <div class="content">
+    <div id="tab1" class="tab-content" style="display: none;">
+      <h2>Tab 1 Content</h2>
+      <p>This is the content for Tab 1.</p>
+    </div>
+    <div id="tab2" class="tab-content" style="display: none;">
+      <h2>Tab 2 Content</h2>
+      <p>This is the content for Tab 2.</p>
+    </div>
+    <div id="tab3" class="tab-content" style="display: none;">
+      <h2>Tab 3 Content</h2>
+      <p>This is the content for Tab 3.</p>
+    </div>
+  </div>
+  
+  <script>
+    var tabs = document.getElementsByClassName('tab');
+    var tabContents = document.getElementsByClassName('tab-content');
+
+    for (var i = 0; i < tabs.length; i++) {
+      tabs[i].addEventListener('click', function() {
+        var tabId = this.getAttribute('data-tab-id');
+        for (var j = 0; j < tabContents.length; j++) {
+          if (tabContents[j].id === tabId) {
+            tabContents[j].style.display = 'block';
+          } else {
+            tabContents[j].style.display = 'none';
+          }
+        }
+        setActiveTab(Array.prototype.indexOf.call(tabs, this));
+      });
+    }
+  </script>
+</body>
+</html>
