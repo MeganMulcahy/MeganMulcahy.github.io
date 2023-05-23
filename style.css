@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Press Start 2P-Regular';
+    src: url(PressStart2P-Regular.ttf);
+}
+
+body {
+    font-family: 'Press Start 2P-Regular';
+    font-size: 10px;
+}
+
+.container {
+  display: flex;
+  align-items: baseline;
+}
+
+.tabs {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+}
+
+.tabs li {
+  margin-right: 10px;
+  cursor: pointer;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+
+.tabs li.active {
+  border-bottom-color: black;
+}
+
+.content {
+  margin-top: 40px;
+  text-align: left;
+  
+}
+
+/* Modified tab styling */
+.tabs li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.tabs li.active {
+  border-bottom-color: black;
+  font-weight: bold;
+}

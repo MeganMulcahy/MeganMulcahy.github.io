@@ -1,41 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Tabbed Navigation</title>
-  <style>
-    body {
-      font-family: 'Press Start 2P-Regular';
-      src: url(MeganMulcahy.github.io/PressStart2P-Regular.ttf)
-    }
-
-    .container {
-      display: flex;
-      align-items: baseline;
-    }
-    
-    .tabs {
-      list-style-type: none;
-      margin: 0;
-      padding: 20px;
-      display: flex;
-    }
-    
-    .tabs li {
-      margin-right: 10px;
-      cursor: pointer;
-      padding-bottom: 2px;
-      border-bottom: 2px solid transparent;
-    }
-    
-    .tabs li.active {
-      border-bottom-color: black;
-    }
-    
-    .content {
-      margin-top: 40px;
-      text-align: center;
-    }
-  </style>
+    <head>
+        <title>Navigation</title>
+        <link rel="stylesheet" href="style.css">
+      </head>
   <script>
     function setActiveTab(index) {
       var tabs = document.getElementsByClassName('tab');
@@ -50,30 +18,59 @@
   </script>
 </head>
 <body>
-  <div class="container">
-    <h1>Static Word</h1>
-    <ul class="tabs">
-      <li class="tab" onclick="setActiveTab(0)">Tab 1</li>
-      <li class="tab" onclick="setActiveTab(1)">Tab 2</li>
-      <li class="tab" onclick="setActiveTab(2)">Tab 3</li>
-    </ul>
-  </div>
+    <div class="container">
+      <h1>Megan Mulcahy</h1>
+      <ul class="tabs">
+        <li class="tab active" data-tab-id="Work" onclick="setActiveTab(0)">Work</li>
+        <li class="tab" data-tab-id="About" onclick="setActiveTab(1)">About</li>
+        <li class="tab" data-tab-id="Contact" onclick="setActiveTab(2)">Contact</li>
+      </ul>
+    </div>
+    
+    <div class="content">
+      <div id="Work" class="tab-content">
+        <h2>Work Content</h2>
+        <div class="grid-container">
+          <div class="grid-item">
+            <img src="image1.jpg" alt="Image 1">
+            <p>Label 1</p>
+          </div>
+          <div class="grid-item">
+            <img src="image2.jpg" alt="Image 2">
+            <p>Label 2</p>
+          </div>
+          <div class="grid-item">
+            <img src="image3.jpg" alt="Image 3">
+            <p>Label 3</p>
+          </div>
+          <div class="grid-item">
+            <img src="image4.jpg" alt="Image 4">
+            <p>Label 4</p>
+          </div>
+          <div class="grid-item">
+            <img src="image5.jpg" alt="Image 5">
+            <p>Label 5</p>
+          </div>
+          <div class="grid-item">
+            <img src="image6.jpg" alt="Image 6">
+            <p>Label 6</p>
+          </div>
+        </div>
+      </div>
+      <div id="About" class="tab-content" style="display: none;">
+        <h2>About Content</h2>
+        <p>This is the content for the About tab.</p>
+      </div>
+      <div id="Contact" class="tab-content" style="display: none;">
+        <h2>Contact Content</h2>
+        <p>This is the content for the Contact tab.</p>
+      </div>
+    </div>
   
   <div class="content">
-    <div id="tab1" class="tab-content" style="display: none;">
-      <h2>Tab 1 Content</h2>
-      <p>This is the content for Tab 1.</p>
-    </div>
-    <div id="tab2" class="tab-content" style="display: none;">
-      <h2>Tab 2 Content</h2>
-      <p>This is the content for Tab 2.</p>
-    </div>
-    <div id="tab3" class="tab-content" style="display: none;">
-      <h2>Tab 3 Content</h2>
-      <p>This is the content for Tab 3.</p>
-    </div>
+    <!-- The content will be loaded dynamically -->
+    <div id="tab-content"></div>
   </div>
-  
   <script>
     var tabs = document.getElementsByClassName('tab');
     var tabContents = document.getElementsByClassName('tab-content');
