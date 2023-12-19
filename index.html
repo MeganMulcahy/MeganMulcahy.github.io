@@ -42,6 +42,13 @@
         width: 50%;
     }
 
+    img2 {
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+      margin: auto;
+    }
+
     @media (max-width: 600px) {
       .grid-container {
         display: block;
@@ -69,13 +76,14 @@
   <div class="container">
     <h1>Megan Mulcahy</h1>
     <ul class="tabs">
-      <li class="tab active" data-tab-id="Work" onclick="setActiveTab(0)">Work</li>
+      <li class="tab active" data-tab-id="Projects" onclick="setActiveTab(0)">Projects</li>
       <li class="tab" data-tab-id="About" onclick="setActiveTab(1)">About</li>
+      <li class="tab" data-tab-id="Resume" onclick="setActiveTab(2)">Resume</li>
     </ul>
   </div>
   
   <div class="content">
-    <div id="Work" class="tab-content">
+    <div id="Projects" class="tab-content">
       <div class="grid-container">
         <div class="grid-item">
           <img src="Untitled-1.png" alt="Image 1">
@@ -85,66 +93,78 @@
           <img src="Untitled-1.png" alt="Image 2">
           <p>ChocAn Java Project</p>
         </div>
-        <!-- <div class="grid-item">
+        <div class="grid-item">
           <img src="Untitled-1.png" alt="Image 3">
-          <p>Label 3</p>
+          <p>Project 3</p>
         </div>
         <div class="grid-item">
           <img src="Untitled-1.png" alt="Image 4">
-          <p>Label 4</p>
+          <p>Project 4</p>
         </div>
         <div class="grid-item">
           <img src="Untitled-1.png" alt="Image 5">
-          <p>Label 5</p>
+          <p>Project 5</p>
         </div>
-        <div class="grid-item">
-          <img src="Untitled-1.png" alt="Image 6">
-          <p>Label 6</p>
-        </div> -->
+        <!-- Add three more project slots as needed -->
       </div>
       <div class="container">
         <div class="column-left">
-            <h1>I am Megan Mulcahy, a student at the University of Alabama, Class of 2025. I am majoring in Computer Science with a concentration in cybersecurity. Currently, I hold a GPA of 3.41, reflecting my dedication and commitment to my studies.
-            </h1>
+            <!-- Additional details about projects can be added here if needed -->
         </div>
       </div>
     </div>
     
     <div id="About" class="tab-content" style="display: none;">
-        <div class="container">
-            <div class="column-left">
-                <h1>I am Megan Mulcahy, a student at the University of Alabama, Class of 2025. I am majoring in Computer Science with a concentration in cybersecurity. Currently, I hold a GPA of 3.41, reflecting my dedication and commitment to my studies.
-                </h1>
-            </div>
-          </div>
-        <div class="container">
+      <div class="container">
         <div class="column-left">
-            <p1>
-                During my time at the university, I have taken a range of courses that have equipped me with a solid foundation in computer science. Some of the notable courses I have completed include CS 100, CS 101, CS 121, CS 200, CS 201, CS 300, and CS 301. These courses have provided me with a deep understanding of various aspects of computer science, including data structures, algorithms, software design, and digital logic.
-                
-                In addition to my academic pursuits, I have actively engaged in extracurricular activities and organizations. I am a member of the Computer Science Honor Society, Mu Alpha Theta Math Honor Society, and the Science Honor Society. These memberships have allowed me to collaborate with like-minded individuals and expand my knowledge beyond the classroom.
-                
-                I have gained practical experience through my employment as an App Developer/Media Intern at Dallas Plastic Surgery Institute in Dallas, TX. During my time there, I developed an iPhone application that streamlined the organization of the plastic surgery procedure catalog. I collaborated with a cross-functional team, including a plastic surgeon and Social Media Manager, to incorporate their design inputs. Additionally, I designed marketing and educational material to make procedure information more accessible to patients.
-                
-                As part of my academic journey, I have also worked on various projects that demonstrate my technical skills and problem-solving abilities. One notable project is "The Plastic Surgery Guide," an iPhone app developed using Swift, Firebase, and Glitch backend. This app serves as a valuable teaching tool, providing prospective patients with information on procedures and up-to-date news. I implemented features such as procedure browsing, filtering, and in-app consultation booking to enhance user experience and efficiency.
-                
-                Throughout my academic career, I have been recognized for my achievements and contributions. I am a member of the Sigma Alpha Lambda Honor Society at the University of Alabama, which acknowledges academic excellence and leadership involvement in the university's Greek community. Additionally, I have been honored as an AP Scholar with Distinction by the College Board for my outstanding performance on multiple AP exams.
-                
-                In terms of skills, I am proficient in languages such as C++, C, Java, Swift, and Python. I have a strong understanding of object-oriented programming (OOP) principles and have worked with technologies such as GitHub, Eclipse, VScode, XCode, and Microsoft Office. My engineering skills include Quartus Prime, circuit design, and data analysis.
-                
-                Outside of academics, I actively participate in campus activities and organizations. I have served as the Homecoming Coordinator for Alpha Delta Pi, where I contributed to a 96 sq. ft. art piece for a competition and managed a team of over 400 students for the homecoming event. 
-            </p1>
+          <h2>Hi, I'm Megan Mulcahy. 
+            I am pursuing a B.S. in Computer Science at The University of Alabama with a minor in Mathematics and a concentration in the critical field of cybersecurity.
+          </h2>
+          <h3>Academic Pursuits</h3>
+          <p>
+            As a dedicated student at The University of Alabama, I'm pursuing a Bachelor of Science in Computer Science with a Minor in Mathematics, slated for graduation in May 2025. 
+            My coursework spans a spectrum from Computer Security to Web Foundations, showcasing my commitment to mastering fundamental concepts in computer science.
+          </p>
+      
+          <h3>Professional Experience and Projects</h3>
+          <p>
+            During my professional journey, I served as an App Developer/Media Intern at Dallas Plastic Surgery Institute in Dallas, TX. Here, I developed the iPhone application, "The Plastic Surgery Guide," utilizing Swift, Firebase, and Glitch backend. 
+            Additionally, a significant academic project involved leading a team in implementing the ChocAn Database Management software (August 2022 - December 2022) using the Waterfall Method, Java, and Eclipse IDE. 
+          </p>
+          <p>
+            In my junior year, I ventured into language interpreters—Lox, Byte, and Lisp—guided by the Crafting Interpreters textbook and incorporating generative AI for effective implementation.
+            Crafting interpreters taught me the art of translating high-level language constructs into executable code, making me appreciate the intricacies of language design and the underlying principles that power the programs we use every day. It was a journey that not only expanded my technical expertise but also ignited a profound curiosity for the intricate world of programming languages.
+          </p>
+      
+          <h3>Extracurricular Involvement</h3>
+          <p>
+            Beyond academics and professional pursuits, I am honored to be a member of the Sigma Alpha Lambda Honor Society at the University of Alabama. 
+            This acknowledgment is a testament to my achievements in academic excellence and leadership involvement in the Greek community. 
+            Serving as the Homecoming Coordinator for Alpha Delta Pi, I successfully led a team in creating a 96 sq. ft. art piece for a homecoming competition, managed over 400 students for the homecoming event, and showcased strong communication and organizational abilities.
+          </p>
+      
+          <h3>Technical Proficiency</h3>
+          <p>
+            Proficient in languages such as C++, C, Java, Swift, and Python, I bring engineering skills in tools like Quartus Prime, circuit design, and data analysis. My diverse experiences underscore my dedication to excellence in both academic challenges and real-world applications within the dynamic field of computer science.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+
+    <div id="Resume" class="tab-content" style="display: none;">
+      <div class="container">
+        <div>
+          <img2 src="Copy of Megan Resume.png" alt="Megan's Resume">
         </div>
       </div>
     </div>
 
-</div>
+  </div>
 
-<h2>mgmulcahy@crimson.ua.edu</h2>
-<a href="mgmulcahy@crimson.ua.edu"><h2>Send Email</h2></a>
-<p> </p>
+  <h2>Reach out to me via email at <a href="mailto:mgmulcahy@crimson.ua.edu">mgmulcahy@crimson.ua.edu</a>.</h2>
 
- <script>
+  <script>
     var tabs = document.getElementsByClassName('tab');
     var tabContents = document.getElementsByClassName('tab-content');
 
