@@ -1,166 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Navigation</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Megan Mulcahy</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-    
-    th, td {
-      padding: 10px;
-      text-align: center;
-    }
-    
-    th {
-      background-color: #f2f2f2;
-    }
-    
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 20px;
-    }
-    
-    .grid-item {
-      text-align: center;
-    }
-    
-    .grid-item img {
-      width: 100%;
-      height: auto;
-    }
-    .container {
-        display: flex;
-    }
-
-    .column-left,
-    .column-right {
-        width: 50%;
-    }
-
-    @media (max-width: 600px) {
-      .grid-container {
-        display: block;
-      }
-      
-      .grid-item {
-        margin-bottom: 20px;
-      }
-    }
-  </style>
-  <script>
-    function setActiveTab(index) {
-      var tabs = document.getElementsByClassName('tab');
-      for (var i = 0; i < tabs.length; i++) {
-        if (i === index) {
-          tabs[i].classList.add('active');
-        } else {
-          tabs[i].classList.remove('active');
-        }
-      }
-    }
-  </script>
+  <link rel="stylesheet" href="custom-style.css">
 </head>
 <body>
   <div class="container">
     <h1>Megan Mulcahy</h1>
     <ul class="tabs">
-      <li class="tab active" data-tab-id="Work" onclick="setActiveTab(0)">Work</li>
-      <li class="tab" data-tab-id="About" onclick="setActiveTab(1)">About</li>
+      <li class="tab active" data-tab-id="Projects" onclick="loadContent('Projects')">Projects</li>
+      <li class="tab" data-tab-id="About" onclick="loadContent('About')">About</li>
+      <li class="tab" data-tab-id="Resume" onclick="loadContent('Resume')">Resume</li>
     </ul>
   </div>
   
-  <div class="content">
-    <div id="Work" class="tab-content">
-      <div class="grid-container">
-        <div class="grid-item">
-          <img src="Untitled-1.png" alt="Image 1">
-          <p>Plastics Swift Project (In Progress)</p>
-        </div>
-        <div class="grid-item">
-          <img src="Untitled-1.png" alt="Image 2">
-          <p>ChocAn Java Project</p>
-        </div>
-        <!-- <div class="grid-item">
-          <img src="Untitled-1.png" alt="Image 3">
-          <p>Label 3</p>
-        </div>
-        <div class="grid-item">
-          <img src="Untitled-1.png" alt="Image 4">
-          <p>Label 4</p>
-        </div>
-        <div class="grid-item">
-          <img src="Untitled-1.png" alt="Image 5">
-          <p>Label 5</p>
-        </div>
-        <div class="grid-item">
-          <img src="Untitled-1.png" alt="Image 6">
-          <p>Label 6</p>
-        </div> -->
-      </div>
-      <div class="container">
-        <div class="column-left">
-            <h1>I am Megan Mulcahy, a student at the University of Alabama, Class of 2025. I am majoring in Computer Science with a concentration in cybersecurity. Currently, I hold a GPA of 3.41, reflecting my dedication and commitment to my studies.
-            </h1>
-        </div>
-      </div>
-    </div>
-    
-    <div id="About" class="tab-content" style="display: none;">
-        <div class="container">
-            <div class="column-left">
-                <h1>I am Megan Mulcahy, a student at the University of Alabama, Class of 2025. I am majoring in Computer Science with a concentration in cybersecurity. Currently, I hold a GPA of 3.41, reflecting my dedication and commitment to my studies.
-                </h1>
-            </div>
-          </div>
-        <div class="container">
-        <div class="column-left">
-            <p1>
-                During my time at the university, I have taken a range of courses that have equipped me with a solid foundation in computer science. Some of the notable courses I have completed include CS 100, CS 101, CS 121, CS 200, CS 201, CS 300, and CS 301. These courses have provided me with a deep understanding of various aspects of computer science, including data structures, algorithms, software design, and digital logic.
-                
-                In addition to my academic pursuits, I have actively engaged in extracurricular activities and organizations. I am a member of the Computer Science Honor Society, Mu Alpha Theta Math Honor Society, and the Science Honor Society. These memberships have allowed me to collaborate with like-minded individuals and expand my knowledge beyond the classroom.
-                
-                I have gained practical experience through my employment as an App Developer/Media Intern at Dallas Plastic Surgery Institute in Dallas, TX. During my time there, I developed an iPhone application that streamlined the organization of the plastic surgery procedure catalog. I collaborated with a cross-functional team, including a plastic surgeon and Social Media Manager, to incorporate their design inputs. Additionally, I designed marketing and educational material to make procedure information more accessible to patients.
-                
-                As part of my academic journey, I have also worked on various projects that demonstrate my technical skills and problem-solving abilities. One notable project is "The Plastic Surgery Guide," an iPhone app developed using Swift, Firebase, and Glitch backend. This app serves as a valuable teaching tool, providing prospective patients with information on procedures and up-to-date news. I implemented features such as procedure browsing, filtering, and in-app consultation booking to enhance user experience and efficiency.
-                
-                Throughout my academic career, I have been recognized for my achievements and contributions. I am a member of the Sigma Alpha Lambda Honor Society at the University of Alabama, which acknowledges academic excellence and leadership involvement in the university's Greek community. Additionally, I have been honored as an AP Scholar with Distinction by the College Board for my outstanding performance on multiple AP exams.
-                
-                In terms of skills, I am proficient in languages such as C++, C, Java, Swift, and Python. I have a strong understanding of object-oriented programming (OOP) principles and have worked with technologies such as GitHub, Eclipse, VScode, XCode, and Microsoft Office. My engineering skills include Quartus Prime, circuit design, and data analysis.
-                
-                Outside of academics, I actively participate in campus activities and organizations. I have served as the Homecoming Coordinator for Alpha Delta Pi, where I contributed to a 96 sq. ft. art piece for a competition and managed a team of over 400 students for the homecoming event. 
-            </p1>
-        </div>
-      </div>
-    </div>
+  <div class="content" id="content-container">
+    <!-- Content will be dynamically loaded here -->
+  </div>
 
-</div>
+  <h2>mgmulcahy@crimson.ua.edu</h2>
+  <a href="mgmulcahy@crimson.ua.edu"><h2>Send Email</h2></a>
 
-<h2>mgmulcahy@crimson.ua.edu</h2>
-<a href="mgmulcahy@crimson.ua.edu"><h2>Send Email</h2></a>
-<p> </p>
-
- <script>
-    var tabs = document.getElementsByClassName('tab');
-    var tabContents = document.getElementsByClassName('tab-content');
-
-    for (var i = 0; i < tabs.length; i++) {
-      tabs[i].addEventListener('click', function() {
-        var tabId = this.getAttribute('data-tab-id');
-        for (var j = 0; j < tabContents.length; j++) {
-          if (tabContents[j].id === tabId) {
-            tabContents[j].style.display = 'block';
-          } else {
-            tabContents[j].style.display = 'none';
-          }
-        }
-        setActiveTab(Array.prototype.indexOf.call(tabs, this));
-      });
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
