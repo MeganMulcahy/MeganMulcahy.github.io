@@ -1,186 +1,184 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Navigation</title>
+  <title>Portfolio Website-Megan</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linking css file -->
   <link rel="stylesheet" href="style.css">
-  <style>
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-    
-    th, td {
-      padding: 10px;
-      text-align: center;
-    }
-    
-    th {
-      background-color: #f2f2f2;
-    }
-    
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 20px;
-    }
-    
-    .grid-item {
-      text-align: center;
-    }
-    
-    .grid-item img {
-      width: 100%;
-      height: auto;
-    }
-    .container {
-        display: flex;
-    }
-
-    .column-left,
-    .column-right {
-        width: 50%;
-    }
-
-    img2 {
-      max-width: 100%;
-      max-height: 100%;
-      display: block;
-      margin: auto;
-    }
-
-    @media (max-width: 600px) {
-      .grid-container {
-        display: block;
-      }
-      
-      .grid-item {
-        margin-bottom: 20px;
-      }
-    }
-  </style>
-  <script>
-    function setActiveTab(index) {
-      var tabs = document.getElementsByClassName('tab');
-      for (var i = 0; i < tabs.length; i++) {
-        if (i === index) {
-          tabs[i].classList.add('active');
-        } else {
-          tabs[i].classList.remove('active');
-        }
-      }
-    }
-  </script>
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  <div class="container">
-    <h1>Megan Mulcahy</h1>
-    <ul class="tabs">
-      <li class="tab active" data-tab-id="Projects" onclick="setActiveTab(0)">Projects</li>
-      <li class="tab" data-tab-id="About" onclick="setActiveTab(1)">About</li>
-      <li class="tab" data-tab-id="Resume" onclick="setActiveTab(2)">Resume</li>
-    </ul>
-  </div>
-  
-  <div class="content">
-    <div id="Projects" class="tab-content">
-      <div class="grid-container">
-        <div class="grid-item">
-          <img src="Untitled-1.png" alt="Image 1">
-          <p>Plastics Swift Project (In Progress)</p>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
+        <div class="container">
+            <a class="navbar-brand" href="#">Megan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                
+            </div>
         </div>
-        <div class="grid-item">
-          <img src="Untitled-1.png" alt="Image 2">
-          <p>ChocAn Java Project</p>
+    </nav>
+    <!-- main banner -->
+    <section class="bgimage" id="home">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+            <h2 class="hero_title">I'm Megan Mulcahy</h2>
+            <h2 style="padding-left: 20px; padding-right: 20px">I am pursuing a B.S. in Computer Science at The University of Alabama with a minor in Mathematics and a concentration in the critical field of cybersecurity.</h2>
         </div>
-        <div class="grid-item">
-          <img src="Untitled-1.png" alt="Image 3">
-          <p>Project 3</p>
+    </section>    
+
+    <!-- about section-->
+    <section id="about">
+        <div class="container mt-4 pt-4">
+            <h1 class="text-center">About Me</h1>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <img src="Megan Composite.JPG" class= "imageAboutPage" alt="">
+                </div>
+
+                <div class="col-lg-8">
+                    <h3>I am a work in progress</h3>
+                    <h2>Major related courses</h2>
+                </div>
+            </div>
+    </section>
+
+    <!-- services section-->
+    <section id="projects">
+        <div class="container">
+            <h1 class="text-center">Projects</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">The Plastic Surgery Guide</h4>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">ChocAn</h4>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/portfolioImage3.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Lox Interpreter</h4>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Byte Interpreter</h4>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Lisp Interpreter</h4>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="grid-item">
-          <img src="Untitled-1.png" alt="Image 4">
-          <p>Project 4</p>
+    </section>
+
+    <!-- portfolio section-->
+    <section id="resume">
+        <div class="container mt-3">
+            <h1 class="text-center">Resume</h1>
+            <div class="text-center">
+                <img src="Megan Active Resume.JPG" class="img-fluid" style="max-width: 50%;" alt="Megan Resume">
+                <p class="mt-2"><a href="https://example.com/path/to/Megan Active Resume.JPG" download target="_blank">Download Resume</a></p>
+            </div>
+        </div>              
+    </section>
+
+    <!-- contact section-->
+    <section id="contact">
+        <div class="container mt-3 contactContent">
+            <div class="text-center">
+                <a href="mailto:mgmulcahy@crimson.ua.edu" class="btn btn-success"><h1>Contact Megan</h1></a>
+            </div>
         </div>
-        <div class="grid-item">
-          <img src="Untitled-1.png" alt="Image 5">
-          <p>Project 5</p>
-        </div>
-        <!-- Add three more project slots as needed -->
-      </div>
-      <div class="container">
-        <div class="column-left">
-            <!-- Additional details about projects can be added here if needed -->
-        </div>
-      </div>
-    </div>
+    </section>
     
-    <div id="About" class="tab-content" style="display: none;">
-      <div class="container">
-        <div class="column-left">
-          <h2>Hi, I'm Megan Mulcahy. 
-            I am pursuing a B.S. in Computer Science at The University of Alabama with a minor in Mathematics and a concentration in the critical field of cybersecurity.
-          </h2>
-          <h3>Academic Pursuits</h3>
-          <p>
-            As a dedicated student at The University of Alabama, I'm pursuing a Bachelor of Science in Computer Science with a Minor in Mathematics, slated for graduation in May 2025. 
-            My coursework spans a spectrum from Computer Security to Web Foundations, showcasing my commitment to mastering fundamental concepts in computer science.
-          </p>
-      
-          <h3>Professional Experience and Projects</h3>
-          <p>
-            During my professional journey, I served as an App Developer/Media Intern at Dallas Plastic Surgery Institute in Dallas, TX. Here, I developed the iPhone application, "The Plastic Surgery Guide," utilizing Swift, Firebase, and Glitch backend. 
-            Additionally, a significant academic project involved leading a team in implementing the ChocAn Database Management software (August 2022 - December 2022) using the Waterfall Method, Java, and Eclipse IDE. 
-          </p>
-          <p>
-            In my junior year, I ventured into language interpreters—Lox, Byte, and Lisp—guided by the Crafting Interpreters textbook and incorporating generative AI for effective implementation.
-            Crafting interpreters taught me the art of translating high-level language constructs into executable code, making me appreciate the intricacies of language design and the underlying principles that power the programs we use every day. It was a journey that not only expanded my technical expertise but also ignited a profound curiosity for the intricate world of programming languages.
-          </p>
-      
-          <h3>Extracurricular Involvement</h3>
-          <p>
-            Beyond academics and professional pursuits, I am honored to be a member of the Sigma Alpha Lambda Honor Society at the University of Alabama. 
-            This acknowledgment is a testament to my achievements in academic excellence and leadership involvement in the Greek community. 
-            Serving as the Homecoming Coordinator for Alpha Delta Pi, I successfully led a team in creating a 96 sq. ft. art piece for a homecoming competition, managed over 400 students for the homecoming event, and showcased strong communication and organizational abilities.
-          </p>
-      
-          <h3>Technical Proficiency</h3>
-          <p>
-            Proficient in languages such as C++, C, Java, Swift, and Python, I bring engineering skills in tools like Quartus Prime, circuit design, and data analysis. My diverse experiences underscore my dedication to excellence in both academic challenges and real-world applications within the dynamic field of computer science.
-          </p>
+    <!-- footer section-->
+    <footer id="footer">
+        <div class="container-fluid">
+            <!-- social media icons -->
+            <div class="social-icons mt-4">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a>
+            </div>
         </div>
-      </div>
-    </div>
-    
+    </footer>
 
-    <div id="Resume" class="tab-content" style="display: none;">
-      <div class="container">
-        <div>
-          <img2 src="Copy of Megan Resume.png" alt="Megan's Resume">
-        </div>
-      </div>
-    </div>
+    <!-- load javascript after loading all html content -->
+    <script src="script/script.js"></script>
 
-  </div>
-
-  <h2>Reach out to me via email at <a href="mailto:mgmulcahy@crimson.ua.edu">mgmulcahy@crimson.ua.edu</a>.</h2>
-
-  <script>
-    var tabs = document.getElementsByClassName('tab');
-    var tabContents = document.getElementsByClassName('tab-content');
-
-    for (var i = 0; i < tabs.length; i++) {
-      tabs[i].addEventListener('click', function() {
-        var tabId = this.getAttribute('data-tab-id');
-        for (var j = 0; j < tabContents.length; j++) {
-          if (tabContents[j].id === tabId) {
-            tabContents[j].style.display = 'block';
-          } else {
-            tabContents[j].style.display = 'none';
-          }
-        }
-        setActiveTab(Array.prototype.indexOf.call(tabs, this));
-      });
-    }
-  </script>
 </body>
+
 </html>
