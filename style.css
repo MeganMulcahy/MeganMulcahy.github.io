@@ -3,22 +3,28 @@
     src: url(fonts/Spectral-Light.ttf);
 }
 
+@font-face {
+    font-family: 'Spectral-SemiBold';
+    src: url(fonts/Spectral-SemiBoldItalic.ttf);
+}
+
 body {
     font-family: 'Spectral-Light';
     font-size: 15px;
 }
 
+/* Use Spectral-Light for h1 by default */
+h1 {
+    font-family: 'Spectral-SemiBold';
+    font-weight: normal; /* Reset font-weight to normal */
+}
+
 .hero_title,
 .hero_desc,
 .hero-text,
-body, h1, h2, h3, h4, h5, h6, p, a, li, ul, span {
+body, h2, h3, h4, h5, h6, p, a, li, ul, span {
     font-family: 'Spectral-Light'; /* Updated font-family to 'Spectral-Light' */
 }
-
- /* {
-    font-family: 'Spectral-Light';
-} */
-
 
 /* display background color black on navbar scroll */
 .navbarScroll.navbarDark {
