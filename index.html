@@ -129,8 +129,44 @@
         <div class="container mt-3 contactContent">
             <div class="text-center">
                 <h1>CONTACT MEGAN</h1>
-                <h3>Reach out to me via email at <a href="mailto:mgmulcahy@crimson.ua.edu">mgmulcahy@crimson.ua.edu</a>.</h3>
             </div>
+            <div class="text-center">
+                <h5>Email : <a href="mailto:mgmulcahy@crimson.ua.edu" style="color: #FF33BE;">mgmulcahy@crimson.ua.edu</a></h5>
+                <h5 style="color: #FF85D8; font-style: italic;">...or use the following form</h5>
+            </div>
+
+            <div class="container mt-4">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <!-- form fields -->
+                        <form action="https://formspree.io/f/mbjnrqnp" method="POST">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <h2> <input type="name" class="form-control mt-3" placeholder="Your name" name="name"> </h2>
+                                    </div>
+                                    <div class="form-group">
+                                        <h2> <input type="email" class="form-control mt-3" placeholder="Your email *" name="email" required> </h2>
+                                    </div>
+                                    <div class="form-group">
+                                       <h2> <input type="text" class="form-control mt-3" placeholder="Subject *" name="subject" required> </h2>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group mt-3"> <!-- Added margin-bottom to the form-group -->
+                                        <h2> <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Message *" required></textarea> </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center" style="padding-top: 10px;">
+                                <button type="submit" style="background-color: #FF85D8; color: white; padding-top: 10px; padding-bottom: 10px;" class="custom-btn btn btn-xl">Send Message</button>
+                                <!-- Added padding-top and padding-bottom to the button -->
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </section>
     
