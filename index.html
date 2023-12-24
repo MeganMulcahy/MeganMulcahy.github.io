@@ -79,26 +79,45 @@
     </section>
     
     <!-- skills section-->
-
     <section id="skills">
         <div class="container">
             <h1 class="text-center">SKILLS</h1>
+            <button id="toggleButton">Toggle Hidden Section</button>
+
+            <div id="hiddenSection">
+                <!-- Content of the hidden section goes here -->
+                <h1>This is the hidden content.</h1>
+            </div>
         </div>
     </section>
-
+    
+    
     <!-- projects section-->
     <section id="projects">
         <div class="container">
             <h1 class="text-center">PROJECTS</h1>
-            <div class="row">
+            <div class="row ">
                 <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
+                    <div class="card h-100">
+                        <img class="card-img-top mx-auto" src="images/1024.png" alt="Card image" style="width: 50%;">
                         <div class="card-body">
-                            <h4 class="card-title">Project 1</h4>
-                            <p class="card-text">Description of Project 1.</p>
+                            <h4 class="card-title">The Plastic Surgery Guide</h4>
+                            <p class="card-text">Developed an iPhone app using Swift for a client, creating a user-friendly interface that offers comprehensive information about plastic surgery procedures.</p>
                             <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
+                                <a href="#" class="btn" style="color: white; background-color: #FF85D8;">IN PROGRESS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent h-100">
+                        <img class="card-img-top mx-auto" src="images/javach.png" alt="Card image" style="width:25%">
+                        <div class="card-body">
+                            <h4 class="card-title">ChocAn</h4>
+                            <p class="card-text">ChocAn is a fictional company that provides healthcare services to its members. The ChocAn Data Center software is a system developed to manage member and provider records, track the services provided, and facilitate billing and reporting processes. The software enables efficient communication between ChocAn operators and healthcare providers, ensuring accurate recording and processing of service data.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn" style="color: white; background-color: #FF85D8;">Link</a>
                             </div>
                         </div>
                     </div>
@@ -106,37 +125,84 @@
 
                 <div class="col-lg-4 mt-4">
                     <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
                         <div class="card-body">
-                            <h4 class="card-title">Project 2</h4>
-                            <p class="card-text">Description of Project 2.</p>
+                            <h4 class="card-title">LOX Langauge Interpreter</h4>
+                            <p class="card-text">The LOX interpreter I've built represents the implementation following the outline in Chapters 4-10 of the book "Crafting Interpreters." We focus on handling scanning, representation, parsing, evaluation, and control flow within the LOX programming language.</p>
                             <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage3.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Project 3</h4>
-                            <p class="card-text">Description of Project 3.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
+                                <a href="https://github.com/MeganMulcahy/LOX-Interpeter" class="btn" style="color: white; background-color: #FF85D8;">Link</a>
                             </div>
                         </div>
                     </div>
                 </div>            
             </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 mt-2">
+                        <div class="card portfolioContent">
+                            <div class="card-body">
+                                <h4 class="card-title">Lisp Langauge Interpreter</h4>
+                                <p class="card-text">The Lisp language interpreter that has been crafted operates as a program proficient in the execution of Lisp code. Noteworthy for its adept handling of symbolic expressions (S-expressions) and the distinctive practice of treating code as data, the interpreter dynamically processes Lisp expressions, often structured as nested lists. A key strength lies in the simplicity and uniformity of Lisp's syntax, characterized by parenthesized expressions, which significantly contributes to ease of use.</p>
+                                <div class="text-center">
+                                    <a href="https://github.com/MeganMulcahy/LISP-Interpreter" class="btn" style="color: white; background-color: #FF85D8;">Link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>     
+                    <div class="col-lg-4 mt-2">
+                        <div class="card portfolioContent">
+                            <div class="card-body">
+                                <h4 class="card-title">Bytecode Langauge Interpreter</h4>
+                                <p class="card-text">My BYTE interpreter processes bytecode, an intermediate representation of source code compiled for a specific platform. Instead of directly executing the source code, the interpreter reads and executes precompiled bytecode. It incorporates features such as a virtual machine, facilitating efficient execution through the interpretation of register-based bytecode. Furthermore, the interpreter utilizes on-demand scanning techniques, dynamically processing bytecode chunks as needed to optimize resource usage.</p>
+                                <div class="text-center">
+                                    <a href="https://github.com/MeganMulcahy/BYTE-Interpreter" class="btn" style="color: white; background-color: #FF85D8;">Link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>       
+                </div>
+            </div>
+            
+            
         </div>
     </section>
 
      <!-- courses section-->
-    <section id="courses">
-        <div class="container">
-            <h1 class="text-center">RELEVENT COURSE WORK</h1>
+     <section id="courses">
+        <div class="container mt-3 col-lg-9 text-center">
+            <h1>RELEVANT COURSE WORK</h1>
+            <div class="mt-3">
+                <div class="row">
+                    <h6>** = Cybersecurity Concentration</h6>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <!-- COMPUTER SCIENCE -->
+                        <h3>Computer Science Courses:</h3>
+                        <h4 style="color:#FF33BE">**Computer Security</h4>
+                        <h4 style="color:#FF33BE">Data Structures and Algorithms</h4>
+                        <h4 style="color:#FF33BE">Operating Systems</h4>
+                        <h4 style="color:#FF33BE">Database Management Systems</h4>
+                        <h4 style="color:#FF33BE">Programming Languages</h4>
+                        <h4 style="color:#FF33BE">Software Design & Engineering</h4>
+                        <h4 style="color:#FF33BE">Web Foundations</h4>
+                        <h4 style="color:#FF33BE">The Discipline Of Computing</h4>
+                        <h4 style="color:#FF33BE; padding-bottom: 30px">Computer Science Principles</h4>
+                    </div>
+                    <div class="col-lg-6">
+                        <!-- ECE -->
+                        <h3>Electrical Engineering Courses:</h3>
+                        <h4 style="color:#b9619d">Microcomputers</h4>
+                        <h4 style="color:#b9619d; padding-bottom: 30px">Digital Logic</h4>
+                        <!-- MATH -->
+                        <h3>Mathematics Courses:</h3>
+                        <h4 style="color:#FF85D8">Introduction to Linear Algebra</h4>
+                        <h4 style="color:#FF85D8">Discrete Mathematics</h4>
+                        <h4 style="color:#FF85D8">Calculus III</h4>
+                        <h4 style="color:#FF85D8">General Engineering Statistics</h4>
+                    </div>
+                </div>
+                
+            </div>
         </div>
     </section>
 

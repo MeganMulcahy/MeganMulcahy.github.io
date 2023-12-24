@@ -26,15 +26,37 @@ body, h2, h3, h4, h5, h6, p, a, li, ul, span {
     font-family: 'Spectral-Light'; /* Updated font-family to 'Spectral-Light' */
 }
 
+
 /* display background color black on navbar scroll */
 .navbarScroll.navbarDark {
+    background-color: #1A0A15;
+}
+
+.social-buttons {
+    text-align: center;
+}
+
+.social-button {
+    display: inline-block;
     background-color: black;
+    border-radius: 50%;
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    margin: 5px;
+    font-size: 20px;
+    line-height: 50px; /* Keep line-height equal to the height for vertical centering */
+    text-align: center; /* Center the icon horizontally */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.social-button:hover {
+    background-color: #FF85D8;
 }
 
 /* hero background image */
 .bgimage {
     height:100vh;
-    background: url('images/heroImage.jpeg');
+    background: url('Megan Composite.JPG');
     background-size:cover;
     position:relative;
 }
@@ -54,12 +76,27 @@ body, h2, h3, h4, h5, h6, p, a, li, ul, span {
     color: white;
 }
 
-#contact {
-    padding-bottom: 4rem;
+@media (max-width: 767px) {
+    /* Apply styles for screens less than half the width */
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%; /* Make each column take up the full width */
+    }
 }
+/* #contact {
+    padding-bottom: 4rem;
+} */
 /* about section image css */
 .imageAboutPage {
     width: 100%;
+}
+
+#hiddenSection {
+    display: none; /* Initially hide the section */
 }
 
 /* services section css */
@@ -67,19 +104,15 @@ body, h2, h3, h4, h5, h6, p, a, li, ul, span {
     height: 280px;
     cursor: pointer;
   }
-.servicesIcon {
-    font-size: 36px;
-    text-align: center;
-    width: 100%;
-}
+
 .card-title {
     text-align: center;
 }
-.card:hover .servicesIcon {
-    color: #008000;
+.card:hover .social-button2 {
+    color: #FF33BE;
 }
 .servicesText:hover {
-    border: 1px solid #008000;
+    border: 1px solid #FF33BE;
 }
 
 /* social media icons styling */
@@ -87,14 +120,14 @@ body, h2, h3, h4, h5, h6, p, a, li, ul, span {
     font-size: 36px;
     cursor: pointer;
 }
-.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
-    color: #008000;
+.fa-facebook:hover,.fa-github:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+    color: #FF33BE;
 }
 .fab {
-    color: #000000;
+    color: #FF85D8;
 }
 /* footer styling */
 #footer {
-    background-color: #808080;
+    background-color: #1A0A15;
     text-align: center;
 }
