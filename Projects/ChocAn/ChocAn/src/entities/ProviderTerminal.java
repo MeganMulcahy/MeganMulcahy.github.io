@@ -111,7 +111,7 @@ public class ProviderTerminal {
 		while(loopBreaker) {
 			System.out.println("What year (in 4-digit numerical form) was the service provided?");
 			holdingString = sc.next();
-			if (holdingString.length() == 4 && Integer.parseInt(holdingString) >= 1900 && Integer.parseInt(holdingString) <= 2022) {
+			if (holdingString.length() == 4 && Integer.parseInt(holdingString) >= 1900) {
 				holdingDate = holdingDate + holdingString; //append the year
 				loopBreaker = false;
 			}

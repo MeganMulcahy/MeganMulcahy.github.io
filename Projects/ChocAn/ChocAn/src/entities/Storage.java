@@ -1,6 +1,8 @@
 package entities;
 import java.io.*;
 import java.util.*;
+import java.nio.charset.StandardCharsets;
+import java.net.URL;
 
 @SuppressWarnings("unused")
 
@@ -30,17 +32,17 @@ public class Storage {
 	
 	
 	/**
-	 * @author ljhay
+	 * @author ljhay Edited for optimization and JAR File by Megan Mulcahy
 	 *
 	 */
 	private void fillMeL() throws FileNotFoundException {
-			  System.out.println("Beginning to fill Member List...");
-		      File file = new File("Fall2022Team3/Storage/memberlist.txt");
-		      Scanner myReader = new Scanner(file);
-		      String[]holdingArray;
-		      
-		      while (myReader.hasNextLine()) {
-		    	  holdingArray = myReader.nextLine().split(",");
+			System.out.println("Beginning to fill Member List...");
+	        InputStream inputStream = Storage.class.getResourceAsStream("/entities/memberlist.txt");
+	        Scanner myReader = new Scanner(inputStream);
+	        String[] holdingArray;
+	
+	        while (myReader.hasNextLine()) {
+	            holdingArray = myReader.nextLine().split(",");
 		    	  
 		    	  int number = Integer.parseInt(holdingArray[0]);
 		    	  String name = holdingArray[1];
@@ -68,11 +70,9 @@ public class Storage {
 	
 	private void fillPL() throws FileNotFoundException {
 		System.out.println("Beginning to fill ProviderList...");
-		
-		File providerInput = new File("Fall2022Team3/Storage/providerlist.txt");
-		Scanner plScanner = new Scanner(providerInput);
-		String[] holdingArray;
-		//Provider holdingProvider = new Provider();
+        InputStream inputStream = Storage.class.getResourceAsStream("/entities/providerlist.txt");
+        Scanner plScanner = new Scanner(inputStream);
+        String[] holdingArray;
 		
 		while (plScanner.hasNextLine()) {
 			Provider holdingProvider = new Provider();
@@ -99,13 +99,13 @@ public class Storage {
 	
 
 	/**
-	 * @author ljhay
+	 * @author ljhay & Edited for optimization and JAR File by Megan Mulcahy
 	 *
 	 */
 	private void fillMaL() throws FileNotFoundException {
 		System.out.println("Beginning to fill Manager List...");
-	      File file = new File("Fall2022Team3/Storage/managerList.txt");
-	      Scanner myReader = new Scanner(file);
+		  InputStream inputStream = Storage.class.getResourceAsStream("/entities/managerList.txt");
+	      Scanner myReader = new Scanner(inputStream);
 	      String[]holdingArray;
 	      
 	      while (myReader.hasNextLine()) {
@@ -120,8 +120,8 @@ public class Storage {
 
 	private void fillSL() throws FileNotFoundException {
 		System.out.println("Beginning to fill Service List (provider directory)...");
-		File serviceListInput = new File("fall2022team3/src/entities/servicesList.txt");
-		Scanner slScanner = new Scanner(serviceListInput);
+        InputStream inputStream = Storage.class.getResourceAsStream("/entities/serviceList.txt");
+		Scanner slScanner = new Scanner(inputStream);
 		String[] holdingArray;
 		
 		while (slScanner.hasNextLine()) {
@@ -140,13 +140,13 @@ public class Storage {
 	}
 	
 	/*
-	 	Author: Brooke Boskus
+	 	Author: Brooke Boskus & Megan Mulcahy
 	 	fills array with information from given file "serviceRecords"
 	*/
 	private void fillSR() throws FileNotFoundException {
 		System.out.println("Beginning to fill Service Record...");
-		File serviceInput = new File("Fall2022Team3/Storage/serviceRecords.txt");
-		Scanner srScanner = new Scanner(serviceInput);
+        InputStream inputStream = Storage.class.getResourceAsStream("/entities/serviceRecords.txt");
+		Scanner srScanner = new Scanner(inputStream);
 		String[] holdingArray;
 				
 		while(srScanner.hasNextLine()){
@@ -184,89 +184,105 @@ public class Storage {
 	}
 	
 	/**
-	 * @author ljhay
+	 * @author mgmulcahy
 	 *
 	 */
-	private void storeMeL() throws IOException{
-		System.out.println("Beginning to store memberList...");
-		File report = new File("Fall2022Team3/Storage/memberList.txt");
-	    report.createNewFile();
-	
-	    FileWriter fw = new FileWriter("Fall2022Team3/Storage/memberList.txt");
-			
-		while(memberList.size() > 0) {
-			Member newMember = memberList.get(0);
-			int i = 0;
-			if(newMember.getStatus()) {
-				i = 1;
-			}
-			fw.write(newMember.getNum() + "," + newMember.getName() + "," + newMember.getAddress() + "," + newMember.getCity() + "," + newMember.getState() + "," + newMember.getEmail() + "," + newMember.getZip() + "," + newMember.getAmountOwed() + "," + i + "\n");
-			memberList.remove(0);
-		}
-		fw.close();	
-		System.out.println("memberList stored.\n");
+	private void storeMeL() throws IOException {
+	    System.out.println("Beginning to store memberList...");
+
+	    try (InputStream inputStream = Storage.class.getResourceAsStream("/entities/memberlist.txt");
+	         InputStreamReader reader = new InputStreamReader(inputStream);
+	         BufferedReader bufferedReader = new BufferedReader(reader);
+	         BufferedWriter fw = new BufferedWriter(new OutputStreamWriter(
+	                 new FileOutputStream(new File("memberlist.txt")), StandardCharsets.UTF_8))) {
+
+	        String line;
+	        while ((line = bufferedReader.readLine()) != null) {
+	            fw.write(line);
+	            fw.newLine();
+	        }
+
+	        System.out.println("memberlist stored.\n");
+	    }
 	}
+
+
 	
 	/**
-	 * @author ljhay
+	 * @author mgmulcahy
 	 * @throws IOException 
 	 *
 	 */
-	private void storePL() throws IOException{
-		System.out.println("Beginning to store providerList...");
-		File report = new File("Fall2022Team3/Storage/providerList.txt");
-	    report.createNewFile();
-	
-	    FileWriter fw = new FileWriter("Fall2022Team3/Storage/providerList.txt");
-			
-		while(providerList.size() > 0) {
-			Provider newProvider = providerList.get(0);
-			fw.write(newProvider.getNumber() + "," + newProvider.getName() + "," + newProvider.getAddress() + "," + newProvider.getCity() + "," + newProvider.getState() + "," + newProvider.getZipCode() + "," + newProvider.getEmail() + "\n");
-			providerList.remove(0);
-		}
-		fw.close();	
-		System.out.println("providerList stored.\n");
+	private void storePL() throws IOException {
+	    System.out.println("Beginning to store providerList...");
+
+	    try (InputStream inputStream = Storage.class.getResourceAsStream("/entities/providerlist.txt");
+		         InputStreamReader reader = new InputStreamReader(inputStream);
+		         BufferedReader bufferedReader = new BufferedReader(reader);
+		         BufferedWriter fw = new BufferedWriter(new OutputStreamWriter(
+		                 new FileOutputStream(new File("providerlist.txt")), StandardCharsets.UTF_8))) {
+
+	        String line;
+	        while ((line = bufferedReader.readLine()) != null) {
+	            fw.write(line);
+	            fw.newLine();
+	        }
+
+	        System.out.println("providerlist stored.\n");
+	    }
 	}
+
+
+
+
 	
 	/**
-	 * @author ljhay 
+	 * @author mgmulcahy 
+	 * you should avoid using File and FileWriter directly, as they are designed for file operations on the local file system. Instead, you should use getResourceAsStream to get an input stream and then use BufferedWriter to write to a file within the JAR.
 	 *
 	 */
-	private void storeMaL() throws IOException{
-		System.out.println("Beginning to store managerList...");
-		File report = new File("Fall2022Team3/Storage/managerList.txt");
-	    report.createNewFile();
-	
-	    FileWriter fw = new FileWriter("Fall2022Team3/Storage/managerList.txt");
-			
-		while(managerList.size() > 0) {
-			Manager newManager = managerList.get(0);
-			fw.write(newManager.getName() + "," + newManager.getNumber() + "\n");
-			managerList.remove(0);
-		}
-		fw.close();	
-		System.out.println("managerList stored.\n");
+	private void storeMaL() throws IOException {
+	    System.out.println("Beginning to store managerList...");
+
+	    try (InputStream inputStream = Storage.class.getResourceAsStream("/entities/managerList.txt");
+		         InputStreamReader reader = new InputStreamReader(inputStream);
+		         BufferedReader bufferedReader = new BufferedReader(reader);
+		         BufferedWriter fw = new BufferedWriter(new OutputStreamWriter(
+		                 new FileOutputStream(new File("managerList.txt")), StandardCharsets.UTF_8))) {
+
+		        String line;
+		        while ((line = bufferedReader.readLine()) != null) {
+		            fw.write(line);
+		            fw.newLine();
+		        }
+
+	        System.out.println("managerList stored.\n");
+	    }
 	}
+
 	
 	
 	/*
-	 	Author: Brooke Boskus
+	 	Author: Megan Mulcahy & ChatGPT
 	 	stores service record onto a file
 	*/
-	private void storeSR() throws IOException{
-		System.out.println("Beginning to store serviceRecord...");
-		File sReport = new File("Fall2022Team3/Storage/serviceRecords.txt");
-		sReport.createNewFile();
-		
-		FileWriter fw = new FileWriter("Fall2022Team3/Storage/serviceRecords.txt");
-		
-		while(serviceRecords.size() > 0) {
-			ServiceRecord newService = serviceRecords.get(0);
-			fw.write(newService.getCurrentDateTime() + "," + newService.getDateOfService() + "," + newService.getProviderNumber() + "," + newService.getProviderName() + "," + newService.getMemberNumber() + "," + newService.getMemberName() + "," + newService.getServiceNumber() + "," + newService.getServiceName() + "," + newService.getComments() + "," + newService.getCost() + "\n");
-			serviceRecords.remove(0);
-			
-		}
-		fw.close();
-		System.out.println("serviceRecord stored.\n");		
+	private void storeSR() throws IOException {
+	    System.out.println("Beginning to store serviceRecord...");
+
+	    try (InputStream inputStream = Storage.class.getResourceAsStream("/entities/serviceRecords.txt");
+		         InputStreamReader reader = new InputStreamReader(inputStream);
+		         BufferedReader bufferedReader = new BufferedReader(reader);
+		         BufferedWriter fw = new BufferedWriter(new OutputStreamWriter(
+		                 new FileOutputStream(new File("serviceRecords.txt")), StandardCharsets.UTF_8))) {
+
+		        String line;
+		        while ((line = bufferedReader.readLine()) != null) {
+		            fw.write(line);
+		            fw.newLine();
+		        }
+
+	        System.out.println("serviceRecord stored.\n");
+	    }
 	}
+
 }

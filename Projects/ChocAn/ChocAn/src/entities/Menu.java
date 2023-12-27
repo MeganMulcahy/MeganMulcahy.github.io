@@ -14,7 +14,7 @@ import entities.OperatorTerminal;
 public class Menu {
 	
 	/**
-	 * @author ljhay
+	 * @author mgmulcahy
 	 *
 	 */
 	public void mainMenu() throws FileNotFoundException { 
