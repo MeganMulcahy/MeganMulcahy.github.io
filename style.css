@@ -58,6 +58,7 @@ btn, body, h2, h3, h4, h5, h6, p, a, li, ul, span {
 /* hero background image */
 .bgimage {
     height:100vh;
+    zoom: 80%;
     background: url('Megan Composite.JPG');
     background-size:cover;
     position:relative;
