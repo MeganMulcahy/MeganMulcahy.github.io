@@ -22,7 +22,7 @@ h1 {
 .hero_title,
 .hero_desc,
 .hero-text,
-body, h2, h3, h4, h5, h6, p, a, li, ul, span {
+btn, body, h2, h3, h4, h5, h6, p, a, li, ul, span {
     font-family: 'Spectral-Light'; /* Updated font-family to 'Spectral-Light' */
 }
 
