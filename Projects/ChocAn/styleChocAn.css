@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Spectral-Light';
-  src: url(fonts/Spectral-Light.ttf);
+  src: url(../../fonts/Spectral-Light.ttf);
 }
 
 @font-face {
   font-family: 'Spectral-SemiBold';
-  src: url(fonts/Spectral-SemiBold.ttf);
+  src: url(../../fonts/Spectral-SemiBold.ttf);
 }
 
 h1 {
