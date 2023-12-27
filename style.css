@@ -101,14 +101,6 @@ btn, body, h2, h3, h4, h5, h6, p, a, li, ul, span {
     display: none; /* Initially hide the section */
 }
 
-.navbar-container {
-    zoom: 100%;
-}
-
-.navbar-dark.scrolled {
-    background-color: #343a40; /* Dark background color when scrolled */
-}
-
 /* services section css */
 .servicesText.card {
     height: 280px;
