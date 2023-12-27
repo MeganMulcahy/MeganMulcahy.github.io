@@ -11,6 +11,8 @@
 body {
     font-family: 'Spectral-Light';
     font-size: 15px;
+    zoom: 80%;
+
 }
 
 /* Use Spectral-Light for h1 by default */
