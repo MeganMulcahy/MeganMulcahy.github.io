@@ -1,27 +1,4 @@
-@font-face {
-  font-family: 'Spectral-Light';
-  src: url(../../fonts/Spectral-Light.ttf);
-}
 
-@font-face {
-  font-family: 'Spectral-SemiBold';
-  src: url(../../fonts/Spectral-SemiBold.ttf);
-}
-
-h1 {
-  font-family: 'Spectral-SemiBold';
-  font-weight: normal; /* Reset font-weight to normal */
-}
-
-
-.folder,
-.folders,
-.file-link,
-.file-link:hover,
-.file,
-body, h2, h3, h4, h5, h6, p, a, li, ul, span {
-  font-family: 'Spectral-Light'; /* Updated font-family to 'Spectral-Light' */
-}
 
 body {
   margin: 0;
