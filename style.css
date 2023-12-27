@@ -131,3 +131,18 @@ body, h2, h3, h4, h5, h6, p, a, li, ul, span {
     background-color: #1A0A15;
     text-align: center;
 }
+
+.course-link {
+    color: #FF33BE;
+    text-decoration: none;
+}
+
+.ece-link {
+    color: #b9619d;
+    text-decoration: none;
+}
+
+.math-link {
+    color: #FF85D8;
+    text-decoration: none;
+}
