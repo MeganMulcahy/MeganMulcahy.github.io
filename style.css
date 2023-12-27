@@ -96,6 +96,7 @@ btn, body, h2, h3, h4, h5, h6, p, a, li, ul, span {
 /* about section image css */
 .imageAboutPage {
     width: 100%;
+    zoom: 80%;
 }
 
 #hiddenSection {
