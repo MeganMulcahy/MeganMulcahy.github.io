@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChocAn Project Repository</title>
+    <link rel="stylesheet" href="styleChocAn.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6">
+        <h1>ChocAn</h1>
+        <p style="padding-left: 20px;">ChocAn is a fictional company that provides healthcare services to its members. The ChocAn Data Center software is a system developed to manage member and provider records, track the services provided, and facilitate billing and reporting processes. The software enables efficient communication between ChocAn operators and healthcare providers, ensuring accurate recording and processing of service data. The implementation described above focuses on adding the functionality to update member and provider records in the ChocAn database using the Waterfall Method, including system design, Java code implementation, and deployment with the support of Eclipse IDE and collaboration through Bitbucket.</p>
+
+      
+        <section class="folders">
+          <div class="curved-box">
+            <span><i class="fa fa-folder" style="color: #FF33BE;"></i></span>
+            <button class="custom-link" id="toggleButton">src</button>
+          
+            <!-- Hidden folder -->
+            <div class="curved-box" id="hiddenSection" style="display: none; padding-left: 20px;">
+              <span><i class="fa fa-folder" style="color: #FF85D8;"></i></span>
+              <button class="custom-link" id="nestedToggleButton">entities</button>
+              
+              <!-- Hidden files -->
+              <div class="curved-box" id="nestedHiddenSection" style="display: none; padding-left: 40px;">
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="src/entities/Main.java">Main.java</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="src/entities/Manager.java">Manager.java</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="src/entities/ManagerTerminal.java">ManagerTerminal.java</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="src/entities/Member.java">Member.java</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="src/entities/Operator.java">Operator.java</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="src/entities/OperatorTerminal.java">OperatorTerminal.java</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="src/entities/Provider.java">Provider.java</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="src/entities/ProviderDirectory.java">ProviderDirectory.java</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="src/entities/ProviderTerminal.java">ProviderTerminal.java</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="src/entities/Report.java">Report.java</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="src/entities/Service.java">Service.java</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="src/entities/ServiceRecord.java">ServiceRecord.java</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="src/entities/Storage.java">Storage.java</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="src/entities/TESTBED.java">TESTBED.java</a></div>
+                <div><span><i class="far fa-file-word"></i></span><a target="_blank" class="file-link" href="src/entities/Providers2.txt">Providers2.txt</a></div>
+                <div><span><i class="far fa-file-word"></i></span><a target="_blank" class="file-link" href="src/entities/servicesList.txt">servicesList.txt</a></div>
+                <div><span><i class="far fa-file-word"></i></span><a target="_blank" class="file-link" href="src/entities/testfile.txt">testfile.txt</a></div>
+                <div><span><i class="far fa-file-word"></i></span><a target="_blank" class="file-link" href="src/entities/testfile2.txt">testfile2.txt</a></div>
+              </div> 
+            </div>
+          </div>
+
+          <!-- Storage -->
+          <div class="curved-box">
+            <span><i class="fa fa-folder" style="color: #FF33BE;"></i></span>
+            <button class="custom-link" id="nestedToggleButton">Storage</button>
+              <!-- Hidden files -->
+              <div class="curved-box" id="nestedToggleButton" style="display: none; padding-left: 40px;">
+                <div><span><i class="far fa-file-word"></i></span><a target="_blank" class="file-link" href="Storage/managerList.txt">managerList.txt</a></div>
+                <div><span><i class="far fa-file-word"></i></span><a target="_blank" class="file-link" href="Storage/memberlist.txt">memberlist.txt</a></div>
+                <div><span><i class="far fa-file-word"></i></span><a target="_blank" class="file-link" href="Storage/providerlist.txt">providerlist.txt</a></div>
+                <div><span><i class="far fa-file-word"></i></span><a target="_blank" class="file-link" href="Storage/serviceRecords.txt">serviceRecords.txt</a></div>
+              </div>
+          </div>
+
+          <!-- Reports -->
+          <div class="curved-box">
+            <span><i class="fa fa-folder" style="color: #FF33BE;"></i></span>
+            <button class="custom-link" id="nestedToggleButton">Reports</button>
+
+            <!-- Hidden folders -->
+            <div class="curved-box" id="nestedToggleButton" style="display: none; padding-left: 20px;">
+              <!-- Subfolder 1 -->
+              <div class="curved-box">
+                <span><i class="fa fa-folder" style="color: #FF85D8;"></i></span>
+                <button class="custom-link" id="nestedToggleButton">EFTData</button>
+
+                <!-- Hidden files -->
+                <div class="curved-box" id="nestedToggleButton" style="display: none; padding-left: 40px;">
+                  <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="Reports/EFTData/EFTData ">EFTData</a></div>
+                </div>
+              </div>
+
+              <!-- Subfolder 2 -->
+              <div class="curved-box">
+                <span><i class="fa fa-folder" style="color: #FF85D8;"></i></span>
+                <button class="custom-link" id="nestedToggleButton">MemberReports</button>
+
+                <!-- Hidden files -->
+                <div class="curved-box" id="nestedToggleButton" style="display: none; padding-left: 40px;">
+                  <div><span><i class="far fa-file-word"></i></span><a target="_blank" class="file-link" href="Reports/MemberReports/Alfred_report.txt">Alfred_report.txt</a></div>
+                  <div><span><i class="far fa-file-word"></i></span><a target="_blank" class="file-link" href="Reports/MemberReports/Bob_report.txt">Bob_report.txt</a></div>
+                </div>
+              </div>
+
+              <!-- Subfolder 3 -->
+              <div class="curved-box">
+                <span><i class="fa fa-folder" style="color: #FF85D8;"></i></span>
+                <button class="custom-link" id="nestedToggleButton">ProviderReports</button>
+
+                <!-- Hidden files -->
+                <div class="curved-box" id="nestedToggleButton" style="display: none; padding-left: 40px;">
+                  <div><span><i class="far fa-file-word"></i></span><a target="_blank" class="file-link" href="Reports/ProviderReports/Abigail_report.txt">Abigail_report.txt</a></div>
+                  <div><span><i class="far fa-file-word"></i></span><a target="_blank" class="file-link" href="Reports/ProviderReports/Betty_report.txt">Betty_report.txt</a></div>
+                </div>
+              </div>
+
+              <!-- Subfolder 4 -->
+              <div class="curved-box">
+                <span><i class="fa fa-folder" style="color: #FF85D8;"></i></span>
+                <button class="custom-link" id="nestedToggleButton">SummaryReports</button>
+
+                <!-- Hidden files -->
+                <div class="curved-box" id="nestedToggleButton" style="display: none; padding-left: 40px;">
+                  <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="Reports/SummaryReport/SummaryReport">SummaryReport</a></div>
+                </div>
+              </div>
+
+            </div>
+            <div><span><i class="far fa-m"></i></span><a target="_blank" class="file-link" href="Makefile">Makefile</a></div>
+            <div><button style="padding-top: 10px;" class="custom-link"><a target="_blank" class="file-link" href="ChocAn.jar">ChocAn.jar</a></button></div>
+
+          </div>
+          <p style="font-size: 12px;">Download the makefile and .jar file to the same folder, open your terminal to where both are located and run "Make" to demo yourself.</p>
+      
+          <section class="readme">
+            <h2>Instructions:</h2>
+        
+            <h3>Provider</h3>
+            <p>In the main menu, enter “1” into the terminal to enter the Provider Menu. Upon entering, the terminal will prompt the user for a Provider ID. If an integer less than 9 digits long is entered, the terminal will prompt again and return “Invalid provider number, must be 9 numbers long” until a 9 digit ID is entered. Once the provider is verified, the user has options:</p>
+            <ol>
+                <li>To validate a member, enter "1" into the terminal and enter the member integer number.</li>
+                <li>To provide a service, enter "2" into the terminal.</li>
+                <li>To request a Provider Directory, enter "3" into the terminal. An ordered list of all Services - the code, name, and fee of each service will be emailed to the provider.</li>
+                <li>You can log out of the provider terminal by entering "4" into the terminal. If any other option is entered, a message that says "Invalid selection. Please select a valid option." will be displayed.</li>
+            </ol>
+        
+            <h3>Manager</h3>
+            <p>In the main menu, enter “2” into the terminal to enter the Provider Menu. Upon entering, the terminal will prompt the user for a Manager ID. If an integer less than 9 digits long is entered, the terminal will prompt again and return “Invalid manager ID, must be 9 numbers long” until a 9 digit ID is entered. Once the manager is verified, the user has options:</p>
+            <ol>
+                <li>To run the summary report, enter "1" into the terminal. A report will be generated that lists every provider to be paid that week, the number of consultations each had, and his or her total fee for that week. Finally, the total number of providers who provided services, the total number of consultations, and the overall fee total are printed.</li>
+                <li>To run the Provider report, enter "2" into the terminal. A report will be generated that holds the provider's name (up to 25 characters), number (9 digits), street address (up to 25 characters), city (up to 14 characters), state(2 letters), and ZIP code ( 5 digits). Also, for every service provided, the following details, Date of service (in this form "MM–DD–YYYY"), Date and time data were received by the computer (in this form MM–DD–YYYY HH:MM:SS), Member name (up to 25 characters), Member number ( 9 digits), Service code (6 digits), Fee to be paid (up to $999.99). And also the Total number of consultations with members (3 digits ) and Total fee for week (up to $99,999.9).</li>
+                <li>To run the member report, enter "3" into the terminal. A report will be generated that holds the members' name (up to 25 characters), number (9 digits), street address (up to 25 characters), city (up to 14 characters), state(2 letters), and ZIP code (5 digits). Also, for every service provided, the following details, Date of service (in this form "MM–DD–YYYY"), Provider name (up to 25 characters), and service name (up to 20 characters).</li>
+                <li>For EFT data, enter "4" into the terminal. A record consisting of electronic funds transfer (EFT) data is then written to a disk; banking computers will later ensure that each provider’s bank account is credited with the appropriate amount. It needs a file to be set up containing the provider name (up to 25 characters), provider number (9 digits), and the amount to be transferred.</li>
+                <li>You can exit the manager terminal by entering "5" into the terminal. If any other option is entered, a message that says "Invalid Input" will be displayed.</li>
+            </ol>
+        
+            <h3>Operator</h3>
+            <p>In the main menu, enter "3" into the terminal to enter the Operator Menu. In the operator menu, you can add, delete, or update Members or Providers or exit to the main menu.</p>
+            <ul>
+                <li>To add a provider, enter "1" into the terminal and enter the new provider's integer number (it will verify that the integer is 9 digits long or return "Invalid provider number, must be 9 numbers long"), string name, string address, string city, string state, string email, and integer ZipCode (if the ZipCode is not 5 digits long the terminal will return "Invalid zip code, must be 5 numbers long") into the terminal as prompted. The terminal will return and say "Provider Added" and return the user to the Operator Menu.</li>
+            </ul>
+        
+          </section>
+        </div>
+      
+
+
+
+
+      <div class="col-lg-6">
+        <h2 style="padding-top: 35px;">Demo</h2>
+        <video controls style="width: 90%;">
+          <source src="ChocAnDemo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+       </video>
+
+          <!-- Waterfall Method Implementation -->
+          <h2>Description of Implementation</h2>
+
+          <!-- Requirement Analysis -->
+          <h3>1. Requirement Analysis:</h3>
+          <ul>
+            <li>Identified the need to update member and provider records in the ChocAn database.</li>
+            <li>Defined the scope and objectives of the update functionality.</li>
+          </ul>
+  
+          <!-- System Design -->
+          <h3>2. System Design:</h3>
+          <ul>
+            <li>Created a System Class Diagram (e.g., Megan Mulcahy) to visualize the main components of the ChocAn Data Center software, including classes such as Member, Provider, and DataStorage.</li>
+            <li>Developed Assigned Use Case Sequence Diagrams to illustrate the interactions between the operator and the software during the update process.</li>
+            <li>Utilized a Coupling and Cohesion Diagram to assess the dependencies between different modules and ensure modularity and maintainability.</li>
+          </ul>
+  
+          <!-- Analysis -->
+          <h3>3. Analysis:</h3>
+          <ul>
+            <li>Updated the Use Case Diagram (e.g., 16.Megan Mulcahy) to include the new update functionality.</li>
+            <li>Prepared an Analysis Description to provide a detailed explanation of the update process, including inputs, outputs, and system behavior.</li>
+            <li>Created a Stereotype Class Diagram to depict the different types of classes (e.g., Member, Provider) and their relationships.</li>
+            <li>Designed an Overall Activity Diagram to outline the high-level flow of activities during the update process.</li>
+            <li>Developed Use Case Activity Diagrams to illustrate the step-by-step actions performed by the operator for updating member and provider records.</li>
+          </ul>
+  
+          <!-- Implementation -->
+          <h3>4. Implementation:</h3>
+          <ul>
+            <li>Generated a UML Class Diagram (e.g., Healthcare Services) specifically for the ChocAn Data Center software, representing the class structure and relationships.</li>
+            <li>Implemented the Java code for the ChocAn Data Center software based on the design and requirements.</li>
+            <li>Utilized object-oriented principles to define classes such as Member, Provider, and DataStorage.</li>
+            <li>Implemented methods and functions to handle the update of member and provider records in the persistent data storage.</li>
+            <li>Implemented persistent data storage using file-based storage mechanisms.</li>
+            <li>Used appropriate file I/O operations to read and write member and provider data to data files.</li>
+          </ul>
+  
+          <!-- Testing -->
+          <h3>5. Testing:</h3>
+          <ul>
+            <li>Conducted various tests to verify the functionality and correctness of the implemented update feature.</li>
+            <li>Ensured that the updated records were properly stored in the persistent data storage and could be retrieved accurately.</li>
+          </ul>
+  
+          <!-- Deployment -->
+          <h3>6. Deployment:</h3>
+          <ul>
+            <li>Utilized the Eclipse integrated development environment (IDE) for software development and deployment.</li>
+            <li>Developed the ChocAn Data Center software within the Eclipse environment, leveraging its features and tools for efficient coding.</li>
+            <li>Collaborated with team members using Bitbucket, a web-based platform for hosting Git repositories.</li>
+            <li>Utilized Bitbucket for version control, allowing team members to work on different features simultaneously and merge their changes seamlessly.</li>
+          </ul>
+        </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <script src="scriptChocAn.js"></script>
+</body>
+</html>
