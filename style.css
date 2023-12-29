@@ -11,26 +11,26 @@
 body {
     font-family: 'Spectral-Light';
     font-size: 15px;
-    zoom: 80%;
-
+    /* zoom: 80%; */
+    margin: 0; /* Reset default margin */
+    overflow: hidden;
 }
 
-/* Use Spectral-Light for h1 by default */
 h1 {
     font-family: 'Spectral-SemiBold';
-    font-weight: normal; /* Reset font-weight to normal */
+    font-weight: normal;
 }
 
 .hero_title,
 .hero_desc,
 .hero-text,
 btn, body, h2, h3, h4, h5, h6, p, a, li, ul, span {
-    font-family: 'Spectral-Light'; /* Updated font-family to 'Spectral-Light' */
+    font-family: 'Spectral-Light';
 }
-
 
 /* display background color black on navbar scroll */
 .navbarScroll.navbarDark {
+    color: white;
     background-color: #1A0A15;
 }
 
@@ -55,28 +55,70 @@ btn, body, h2, h3, h4, h5, h6, p, a, li, ul, span {
     background-color: #FF85D8;
 }
 
-/* hero background image */
 .bgimage {
-    height:100vh;
-    background-size:cover;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
 
-    position:relative;
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    padding-left: 20px;
+    padding-right: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.object {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url('cheetahrun.gif') no-repeat center center;
+    background-size: contain;
+    animation-name: bounce;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+.nav-link {
+    color: black !important;
+}
+
+.navbar-brand {
+    color: black !important;
+}
+
+.navbarDark .navbar-brand {
+    color: rgb(255, 255, 255) !important;
+}
+
+.navbarDark .nav-link {
+    color: rgb(255, 221, 221) !important;
+}
+
+
+  @keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+  }
+body {
+    margin: 0;
+    overflow: auto;
 }
 /* text css above hero image*/
 .hero_title {
     font-size: 4.5rem;
 }
+
 .hero_desc {
     font-size: 2rem;
 }
-.hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-}
+
 
 @media (max-width: 767px) {
     /* Apply styles for screens less than half the width */
