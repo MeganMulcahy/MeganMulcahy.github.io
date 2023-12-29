@@ -1,9 +1,0 @@
-165568751,Alfred,111 A Cool Street,Miami,FL,alfred@email.com,13828,0,1
-246845713,Bob,222 A Radical Street,San Francisco,NC,bob@email.com,24384,0,1
-397979256,Creed,333 Skater Drive,New York City,NY,creed@email.com,32947,1000,0
-467525164,Dilbert,444 Slots Avenue,Tuscaloosa,AL,dilbert@email.com,41120,0,1
-567132368,Ethan,555 Middle Circle,Detroit,MI,ethan@email.com,50238,0,1
-648223165,Freud,666 Devil's Lane,Atlanta,GA,freud@email.com,62937,0,1
-797513482,George,777 Lucky Lane,Birmingham,AL,george@email.com,72937,1400,0
-879584202,Hedwick,888 Redfire Street,Nashville,TN,hedwick@email.com,83946,0,1
-945445185,Ian,999 Blessed Boulevard,Heaven,CO,ian@email.com,92636,10101,0
