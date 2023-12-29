@@ -15,7 +15,7 @@
     <div class="row">
       <div class="col-lg-6">
         <h1>Lisp Language Interpreter</h1>
-        <p style="padding-left: 20px;">Project Description</p>
+        <p style="padding-left: 20px;">Building this Lisp interpreter has been an enriching journey, starting with aligning it with the Lox interpreter and translating those concepts into Lisp. The interpreter is implemented in the C# programming language, emphasizing practicality and clarity in language implementation. The grammar, inspired by Lisp conventions, encompasses atoms, symbols, numbers, strings, and various forms of lists, providing a solid foundation for language interpretation. The interpreter employs a list of S-expressions (SExpr) and a dictionary (vars) for variable storage. Noteworthy features include support for Lisp operations, variable assignments, function definitions, and conditional statements.</p>
 
       
         <section class="folders">
@@ -24,36 +24,45 @@
             <button class="custom-link" id="toggleButton">LISP</button>
             <!-- Hidden files -->
             <div class="curved-box" id="hiddenSection" style="display: none; padding-left: 20px;">
-                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="LISP/Interpreter.cs">Main.java</a></div>
-                <div><span><i class="far fa-file-word"></i></span><a target="_blank" class="file-link" href="LISP/tester.lox">testfile2.txt</a></div>
-                <div><span><i class="far fa-m"></i></span><a target="_blank" class="file-link" href="LISP/Makefile">testfile2.txt</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="LISP/CADRCell.cs">CADRCell.cs</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="LISP/Interpreter.cs">Interpreter.cs</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="LISP/Lsp.csproj">Lisp.cs</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="LISP/Lsp.csproj">Lsp.csproj</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="LISP/Parser.cs">Parser.cs</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="LISP/Printer.cs">Printer.cs/a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="LISP/RunTimeError.cs">RunTimeError.cs</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="LISP/Scanner.cs">Scanner.cs</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="LISP/SExpr.cs">SExpr.cs</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="LISP/Token.cs">Token.cs</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="LISP/TokenType.cs">TokenType.cs</a></div>
+                <div><span><i class="far fa-file-word"></i></span><a target="_blank" class="file-link" href="LISP/test.lsp">test.lsp</a></div>
+                <div><span><i class="far fa-m"></i></span><a target="_blank" class="file-link" href="LISP/Makefile">Makefile</a></div>
             </div>
           </div>
       
-          <section class="readme">
-            <h2>Header</h2>
-        
-            <h3>Secondary header</h3>
-            <p>Text</p>
-        
+          <section class="readme">        
+            <h3>Implementation & Progression</h3>
+            <p>The project was initiated by creating a C# project in VSCode on a MAC, utilizing GitHub for version control. I incorporated insights from ChatGPT for translation and error handling. The implementation follows a defined grammar, encapsulated within the Parser class, with comprehensive methods for parsing atoms, null expressions, and various forms of lists. The project structure, including the Lisp.csproj file, reflects a well-organized approach. The GitHub repository showcases a continuous progression of pushes and changes, highlighting a commitment to staying current with technology trends.</p>
+          
+            <h3>Compilation and Running</h3>
+            <p>To compile and run the Lisp interpreter, Mono and Bash are primarily leveraged for compilation and execution, respectively. JetBrains Rider or Visual Studio are viable alternatives. The Makefile streamlines the compilation process, ensuring an efficient workflow. Running the tester script provides a robust method for testing interpreter functionality, with screenshots of testing and output provided in a dedicated folder.</p>
+
+            <h3>Testing</h3>
+            <p>Tests cover a range of functions, showcasing arithmetic and comparison operations, list manipulation, type-checking, logical operators, and user-defined functions through DEFINE. The interpreter handles various mathematical functions, equality checks, list manipulation operations like CONS, CAR, and CDR, and dynamic type-checking functions. While the interpreter demonstrates robust functionality, it's acknowledged that there are limitations, such as challenges in handling certain list definitions, which will be addressed in future iterations.</p>
+            <p>This Lisp interpreter represents a significant step forward, showcasing a comprehensive understanding of Lisp principles, effective implementation, and a commitment to continuous improvement. The journey involved aligning theoretical knowledge with practical application, utilizing both traditional and modern tools for a holistic development process. The interpreter stands as a testament to dedication and the pursuit of excellence in the realm of language interpretation.</p>
           </section>
         </div>
-      
-
-
-
 
       <div class="col-lg-6">
         <h2 style="padding-top: 35px;">Demo</h2>
         <video controls style="width: 90%;">
-          <source src="ChocAnDemo.mp4" type="video/mp4">
+          <source src="LispDemo.mp4" type="video/mp4">
           Your browser does not support the video tag.
        </video>
 
-          <!-- Waterfall Method Implementation -->
-          <h2>Header</h2>
+          <h2>Example Testing</h2>
 
-          <h3>description</h3>
+          <iframe src="tester.pdf" frameborder="0"></iframe>
 
         </section>
       </div>
