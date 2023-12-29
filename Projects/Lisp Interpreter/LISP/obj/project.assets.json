@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/meganmulcahy/Documents/Projects/Website Portfolio/MeganMulcahy.github.io/Projects/Lisp Interpreter/LISP/Lsp.csproj",
+      "projectUniqueName": "/Users/meganmulcahy/Documents/Projects/Website Portfolio/MeganMulcahy.github.io/Lisp Interpreter/LISP/Lsp.csproj",
       "projectName": "Lsp",
-      "projectPath": "/Users/meganmulcahy/Documents/Projects/Website Portfolio/MeganMulcahy.github.io/Projects/Lisp Interpreter/LISP/Lsp.csproj",
+      "projectPath": "/Users/meganmulcahy/Documents/Projects/Website Portfolio/MeganMulcahy.github.io/Lisp Interpreter/LISP/Lsp.csproj",
       "packagesPath": "/Users/meganmulcahy/.nuget/packages/",
-      "outputPath": "/Users/meganmulcahy/Documents/Projects/Website Portfolio/MeganMulcahy.github.io/Projects/Lisp Interpreter/LISP/obj/",
+      "outputPath": "/Users/meganmulcahy/Documents/Projects/Website Portfolio/MeganMulcahy.github.io/Lisp Interpreter/LISP/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/meganmulcahy/.nuget/NuGet/NuGet.Config"
