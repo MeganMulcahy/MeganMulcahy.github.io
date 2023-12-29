@@ -15,7 +15,13 @@
     <div class="row">
       <div class="col-lg-6">
         <h1>Byte Language Interpreter</h1>
-        <p style="padding-left: 20px;">Project Description</p>
+        <p style="padding-left: 20px;">The BYTE interpreter I've constructed aligns closely with the principles laid out in Chapters 14-30 of the instructional material, aiming to embody the essence of the BYTE programming language. The primary focus revolves around the intricate handling of bytecode chunks, implementing features such as a virtual machine, register-based bytecode, and on-demand scanning.</p>
+
+        <p>I chose to implement the interpreter in the C programming language. This decision aligns with the instructional material's emphasis on practicality and clarity in language implementation.</p>
+          
+        <p>The structural foundation of the project is organized using a Makefile to link all components together seamlessly. To initiate the interpreter, users can navigate to the project directory, execute the 'make' command, and then run the interpreter using './clox' in the terminal. This straightforward approach ensures ease of use and accessibility.</p>
+          
+        <p>The project's compilation and execution rely on the Makefile, streamlining the process and automating the testing suite. Two tester files are included to cover a comprehensive range of functionalities. Users can effortlessly run these tests by navigating to the project directory, using the 'cd' command, and executing 'make.' This automatic approach facilitates thorough testing and error identification by automatically compiling and running the test files.</p>
 
       
         <section class="folders">
@@ -24,18 +30,54 @@
             <button class="custom-link" id="toggleButton">BYTE</button>
             <!-- Hidden files -->
             <div class="curved-box" id="hiddenSection" style="display: none; padding-left: 20px;">
-                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="BYTE/Interpreter.cs">Main.java</a></div>
-                <div><span><i class="far fa-file-word"></i></span><a target="_blank" class="file-link" href="BYTE/tester.lox">testfile2.txt</a></div>
-                <div><span><i class="fa fa-gear"></i></span><a target="_blank" class="file-link" href="BYTE/Makefile">testfile2.txt</a></div>
+                <div><span><i class="fa fa-gear"></i></span><a target="_blank" class="file-link" href="BYTE/c.make">c.make</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="BYTE/chunk.c">chunk.c</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="BYTE/chunk.h">chunk.h</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="BYTE/common.h">common.h</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="BYTE/compiler.c">compiler.c</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="BYTE/compiler.c">compiler.h</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="BYTE/debug.c">debug.c</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="BYTE/debug.h">debug.h</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="BYTE/main.c">main.c</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="BYTE/memory.c">memory.c</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="BYTE/memory.h">memory.h</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="BYTE/object.c">object.c</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="BYTE/object.h">object.h</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="BYTE/scanner.c">scanner.c</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="BYTE/scanner.h">scanner.h</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="BYTE/table.c">table.c</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="BYTE/table.h">table.h</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="BYTE/value.c">value.c</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="BYTE/value.h">value.h</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="BYTE/vm.c">vm.c</a></div>
+                <div><span><i class="far fa-file"></i></span><a target="_blank" class="file-link" href="BYTE/vm.h">vm.h</a></div>
+                <div><span><i class="far fa-file-word"></i></span><a target="_blank" class="file-link" href="BYTE/tester.lox">tester1.txt</a></div>
+                <div><span><i class="far fa-file-word"></i></span><a target="_blank" class="file-link" href="BYTE/tester2.lox">tester2.txt</a></div>
+                <div><span><i class="fa fa-gear"></i></span><a target="_blank" class="file-link" href="BYTE/Makefile">Makefile</a></div>
             </div>
           </div>
       
-          <section class="readme">
-            <h2>Header</h2>
+          <section class="readme">        
+            <h3>Implementation & Progression</h3>
+            <p>I built the foundation of my BYTE interpreter by creating a C project in VSCode on a MAC computer, complemented with a GitHub repository for version control. Inspired by the methodology presented in the book, I opted for C to ensure a direct correspondence with the theoretical foundations. The virtual machine functionality takes center stage, emphasizing the execution of bytecode instructions and the orchestration of diverse language features.</p>
+
+            <p>The project meticulously adheres to a well-structured organization, aligning with the outlined chapters and effectively encapsulating the essence of the BYTE interpreter. To ensure thorough testing, the implementation incorporates two dedicated tester files. Executing these tests is a streamlined process – users can navigate to the project folder, utilize the 'cd' command, and initiate testing seamlessly with the 'make' command. The Makefile, a pivotal component, plays a crucial role in linking various project elements and facilitating an automated testing suite.</p>
+              
+            <p>Despite the project's complexity spanning a large number of files, I leveraged ChatGPT to enhance error handling efficiently. Handling errors in such a comprehensive project was inherently challenging, but human effort mixed with chatGPT’s ability to explain and remember over multiple files proved to be a valuable resource in navigating and addressing issues across the extensive codebase. The synergy between manual intervention and AI assistance contributed to a more effective error management strategy throughout the development lifecycle.</p>
         
-            <h3>Secondary header</h3>
-            <p>Text</p>
-        
+            <h3>Compilation and Running</h3>
+            <p>Compilation is streamlined using a Makefile, a standard industry tool, to link components and simplify the build process. The interpreter can be executed either from a file or the terminal, offering flexibility. Terminal execution is simplified with the command './clox,' ensuring a user-friendly and accessible experience.</p>
+
+            <h3>Testing</h3>
+            <p>To execute the tests, run “make” in the terminal. This will automatically execute 2 tester files with comprehensive test suits, running in the terminal.
+
+            <p>Upon entering the command "make" in the terminal or executing "./clox," the testing suite initiates, systematically covering key aspects of the interpreter's functionality. The goal of testing is to identify errors, areas requiring modification, or optimization for improved functionality.</p>
+              
+            <p>The testing suite covers a range of assignments, verifying the correct handling of variable values and reassignments. I used the given test cases from the Crafting Interpreters book that I used in my LOX Interpreter, with some test cases being removed such as the AND and OR tests since the byte interpreter does not have AND and OR Tokens.</p>
+              
+            <p>Equality comparisons undergo a detailed examination, encompassing different data types and edge cases to confirm the interpreter's resilience in handling diverse scenarios. Closures and functions are scrutinized to ensure their ability to accurately capture and preserve variable states.</p>
+              
+            <p>Expressions, including arithmetic operations, logical operators, and complex expressions, undergo meticulous testing. Special attention is given to control flow structures such as if statements and for loops, ensuring correct functionality under various conditions and body structures. The testing suite also explores negation, return statements, and multiline printing, assessing these features for their expected outcomes.</p>
           </section>
         </div>
       
@@ -46,12 +88,14 @@
       <div class="col-lg-6">
         <h2 style="padding-top: 35px;">Demo</h2>
         <video controls style="width: 90%;">
-          <source src="ChocAnDemo.mp4" type="video/mp4">
+          <source src="ByteDemo.mp4" type="video/mp4">
           Your browser does not support the video tag.
        </video>
 
           <h2>Example Testing</h2>
-          <iframe src="tester.pdf" frameborder="0"></iframe>
+          <iframe style="width: 50%;" scr="tester1.pdf" frameborder="0"></iframe>
+          <iframestyle="width: 50%;" src="tester2.pdf" frameborder="0"></iframe>
+
         </section>
       </div>
     </div>

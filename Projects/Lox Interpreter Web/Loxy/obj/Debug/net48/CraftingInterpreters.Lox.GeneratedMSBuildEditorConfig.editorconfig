@@ -1,0 +1,5 @@
+is_global = true
+build_property.RootNamespace = CraftingInterpreters.Lox
+build_property.ProjectDir = /Users/meganmulcahy/Documents/Projects/Website Portfolio/MeganMulcahy.github.io/Projects/Lox Interpreter Web/Loxy/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

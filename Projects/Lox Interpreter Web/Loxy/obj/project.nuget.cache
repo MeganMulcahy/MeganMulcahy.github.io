@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "iQA4LHg4Fnl7YCxNNFTo/UyFzsl8OXH+7PqHNl3fWgj1LmTBLvICkrIzzbTcIy7czfLOztW3TBC9B2rwtW3cMg==",
+  "success": true,
+  "projectFilePath": "/Users/meganmulcahy/Documents/Projects/Website Portfolio/MeganMulcahy.github.io/Projects/Lox Interpreter Web/Loxy/CraftingInterpreters.Lox.csproj",
+  "expectedPackageFiles": [
+    "/Users/meganmulcahy/.nuget/packages/microsoft.netframework.referenceassemblies/1.0.3/microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "/Users/meganmulcahy/.nuget/packages/microsoft.netframework.referenceassemblies.net48/1.0.3/microsoft.netframework.referenceassemblies.net48.1.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
