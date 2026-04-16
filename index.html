@@ -5,6 +5,13 @@
   <title>Megan Mulcahy · Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
   <!-- Bootstrap (for grid/layout only) -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -20,11 +27,10 @@
 </head>
 <body>
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#home">MEGAN MULCAHY</a>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-cc">
+    <div class="container position-relative">
       <button
-        class="navbar-toggler"
+        class="navbar-toggler navbar-toggler-cc border-0 shadow-none"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#mainNav"
@@ -35,8 +41,10 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
+      <a class="navbar-brand navbar-brand-center mb-0" href="#home">Megan Mulcahy</a>
+
       <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
           <li class="nav-item"><a class="nav-link" href="#projects">PROJECTS</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">SKILLS</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
@@ -70,181 +78,157 @@
         <a href="#contact" class="btn btn-outline-light-accent">Get in Touch</a>
       </div>
       <div class="hero-social">
-        <a href="https://www.linkedin.com/in/meganmulcahy/" target="_blank" class="hero-social-link">
-          <i class="fab fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/meganmulcahy/" target="_blank" rel="noopener noreferrer" class="hero-social-link" aria-label="LinkedIn">
+          <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
         </a>
-        <a href="https://github.com/MeganMulcahy" target="_blank" class="hero-social-link">
-          <i class="fab fa-github"></i>
+        <a href="https://github.com/MeganMulcahy" target="_blank" rel="noopener noreferrer" class="hero-social-link" aria-label="GitHub">
+          <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.31 24 12c0-6.63-5.37-12-12-12z"/></svg>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="section section-alt">
-    <div class="container">
-      <div class="text-center mb-4">
-        <p class="section-subtitle">Selected Work</p>
-        <h2 class="section-title">PROJECTS</h2>
-      </div>
+  <main class="site-main">
+    <!-- PROJECTS — card grid (common portfolio pattern) -->
+    <section id="projects" class="section-main section-main--muted">
+      <div class="container-main">
+        <header class="section-head">
+          <p class="section-eyebrow">Portfolio</p>
+          <h2 class="section-heading">Selected projects</h2>
+          <p class="section-lead">
+            Full-stack, analytics, and low-code work for university and industry.
+          </p>
+        </header>
 
-      <!-- AI, DATA, & ENTERPRISE -->
-      <div class="row gy-4 projects-grid">
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h4 class="card-title">CS PhD Student Data Collection Portal</h4>
-              <p class="project-meta">Senior Design · The University of Alabama</p>
-              <p class="card-text">
-                Senior design project building a web portal for CS PhD students to submit publications, talks,
-                awards, and achievements each semester, with full-stack development and client-facing delivery.
-              </p>
-              <!-- Add demo link when available -->
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h4 class="card-title">Power BI License Dashboard</h4>
-              <p class="project-meta">Mercedes-Benz U.S. International</p>
-              <p class="card-text">
-                Power BI dashboard integrating Excel, SharePoint, SQL, and cloud data sources to monitor software
-                license counts, allocation, and utilization across the organization with advanced DAX measures.
-              </p>
-              <!-- Add demo link when available -->
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h4 class="card-title">Power BI Compliance Dashboard</h4>
-              <p class="project-meta">Mercedes-Benz U.S. International</p>
-              <p class="card-text">
-                Compliance-focused Power BI dashboard highlighting license risks, expiration timelines, and audit
-                readiness using drill-through reports and slicers tailored for leadership reviews.
-              </p>
-              <!-- Add demo link when available -->
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- POWER PLATFORM & LOW-CODE -->
-      <div class="row gy-4 projects-grid mt-2">
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h4 class="card-title">Power Apps SLA/PO Workflow</h4>
-              <p class="project-meta">Mercedes-Benz U.S. International</p>
-              <p class="card-text">
-                Power Apps solution that digitizes SLA and PO approval workflows, using Power Automate and SharePoint
-                integration to route requests, send notifications, and log approvals.
-              </p>
-              <!-- Add demo link when available -->
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h4 class="card-title">Power Apps Audit & Task Tracker</h4>
-              <p class="project-meta">Mercedes-Benz U.S. International</p>
-              <p class="card-text">
-                Power Apps and Power Automate application to centralize audit tasks and recurring compliance activities,
-                providing visibility, reminders, and historical tracking for multiple departments.
-              </p>
-              <!-- Add demo link when available -->
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h4 class="card-title">ChocAn Data Center</h4>
-              <p class="project-meta">The University of Alabama</p>
-              <p class="card-text">
-                Team-based Java project for a fictional healthcare provider, designing and implementing a database-backed
-                system that manages members, providers, services, and reporting for billing and administration using UML
-                and robust data persistence techniques.
-              </p>
-              <a
-                href="Projects/ChocAn/ChocAn/indexChocAn.html"
-                target="_blank"
-                class="project-link"
-              >View Demo</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills" class="section">
-    <div class="container">
-      <div class="text-center mb-4">
-        <p class="section-subtitle">What I Work With</p>
-        <h2 class="section-title">SKILLS</h2>
-      </div>
-
-      <div class="row gy-4 justify-content-center">
-        <div class="col-lg-8">
-          <div class="skill-category p-4">
-            <h4>Languages</h4>
-            <p>C++, C#, Java, Swift, Python, SQL, HTML/CSS, MATLAB, Assembly/C</p>
-          </div>
-        </div>
-        <div class="col-lg-8">
-          <div class="skill-category p-4">
-            <h4>Tools & Technologies</h4>
-            <p>
-              <strong>Development &amp; Engineering:</strong> GitHub, VS Code, Eclipse, Xcode, Quartus<br />
-              <strong>Cloud, Databases &amp; Deployment:</strong> Google Cloud Platform, Firebase, Supabase, Vercel, MongoDB, Oracle<br />
-              <strong>Data, Automation &amp; Business Tools:</strong> Power BI, Power Automate, Power Apps<br />
-              <strong>Systems &amp; Platforms:</strong> Linux (Parrot, Ubuntu), Docker, VirtualBox<br />
-              <strong>Productivity &amp; Design:</strong> Microsoft Office, Google Suite, Adobe Creative Suite
+        <div class="project-grid">
+          <article class="project-card">
+            <h3 class="project-card__title">CS PhD Student Data Collection Portal</h3>
+            <p class="project-card__meta">Senior Design · The University of Alabama</p>
+            <p class="project-card__text">
+              Web portal for CS PhD students to submit publications, talks, awards, and achievements each semester,
+              with full-stack development and client-facing delivery.
             </p>
-          </div>
+          </article>
+
+          <article class="project-card">
+            <h3 class="project-card__title">Power BI License Dashboard</h3>
+            <p class="project-card__meta">Mercedes-Benz U.S. International</p>
+            <p class="project-card__text">
+              Dashboard integrating Excel, SharePoint, SQL, and cloud data to monitor license counts, allocation,
+              and utilization with advanced DAX measures.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3 class="project-card__title">Power BI Compliance Dashboard</h3>
+            <p class="project-card__meta">Mercedes-Benz U.S. International</p>
+            <p class="project-card__text">
+              Compliance-focused reporting on license risks, expiration timelines, and audit readiness with
+              drill-throughs and slicers for leadership.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3 class="project-card__title">Power Apps SLA/PO Workflow</h3>
+            <p class="project-card__meta">Mercedes-Benz U.S. International</p>
+            <p class="project-card__text">
+              Digitized SLA and PO approvals with Power Automate and SharePoint—routing, notifications, and approval logs.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3 class="project-card__title">Power Apps Audit &amp; Task Tracker</h3>
+            <p class="project-card__meta">Mercedes-Benz U.S. International</p>
+            <p class="project-card__text">
+              Centralized audit tasks and recurring compliance activities with reminders and history across departments.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3 class="project-card__title">ChocAn Data Center</h3>
+            <p class="project-card__meta">The University of Alabama</p>
+            <p class="project-card__text">
+              Team-based Java system for a fictional healthcare provider—members, providers, services, and billing—with
+              UML and data persistence.
+            </p>
+            <a href="Projects/ChocAn/ChocAn/indexChocAn.html" target="_blank" rel="noopener noreferrer" class="project-card__link">View demo →</a>
+          </article>
         </div>
-        <div class="col-lg-8">
-          <div class="skill-category p-4">
-            <h4>AI Tools</h4>
-            <p>
+      </div>
+    </section>
+
+    <!-- SKILLS — pills + grouped lists -->
+    <section id="skills" class="section-main">
+      <div class="container-main">
+        <header class="section-head section-head--narrow">
+          <p class="section-eyebrow">Capabilities</p>
+          <h2 class="section-heading">Skills &amp; tools</h2>
+        </header>
+
+        <div class="skills-layout">
+          <div class="skills-block">
+            <h3 class="skills-block__title">Languages</h3>
+            <ul class="skill-pills">
+              <li>C++</li><li>C#</li><li>Java</li><li>Swift</li><li>Python</li><li>SQL</li>
+              <li>HTML/CSS</li><li>MATLAB</li><li>Assembly/C</li>
+            </ul>
+          </div>
+
+          <div class="skills-block">
+            <h3 class="skills-block__title">AI tools</h3>
+            <p class="skills-block__text">
               Retrieval-Augmented Generation (RAG), LlamaIndex, Tesseract, PaddleOCR, PyMuPDF, Cursor.
             </p>
           </div>
+
+          <div class="skills-block skills-block--wide">
+            <h3 class="skills-block__title">Tools &amp; technologies</h3>
+            <dl class="skills-dl">
+              <dt>Development &amp; engineering</dt>
+              <dd>GitHub, VS Code, Eclipse, Xcode, Quartus</dd>
+              <dt>Cloud, databases &amp; deployment</dt>
+              <dd>Google Cloud Platform, Firebase, Supabase, Vercel, MongoDB, Oracle</dd>
+              <dt>Data, automation &amp; business</dt>
+              <dd>Power BI, Power Automate, Power Apps</dd>
+              <dt>Systems &amp; platforms</dt>
+              <dd>Linux (Parrot, Ubuntu), Docker, VirtualBox</dd>
+              <dt>Productivity &amp; design</dt>
+              <dd>Microsoft Office, Google Suite, Adobe Creative Suite</dd>
+            </dl>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section section-alt">
-    <div class="container contactContent">
-      <div class="text-center mb-3">
-        <p class="section-subtitle">Say Hello</p>
-        <h2 class="section-title">CONTACT MEGAN</h2>
+    <!-- CONTACT -->
+    <section id="contact" class="section-main section-main--muted">
+      <div class="container-main container-main--narrow">
+        <div class="contact-panel">
+          <p class="section-eyebrow section-eyebrow--on-dark">Contact</p>
+          <h2 class="contact-panel__title">Let’s connect</h2>
+          <a class="contact-panel__email" href="mailto:megan.mulcahy03@gmail.com">megan.mulcahy03@gmail.com</a>
+          <div class="contact-panel__social">
+            <a href="https://www.linkedin.com/in/meganmulcahy/" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="LinkedIn">
+              <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://github.com/MeganMulcahy" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="GitHub">
+              <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.31 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="text-center mb-3">
-        <p>Email: <a href="mailto:megan.mulcahy03@gmail.com">megan.mulcahy03@gmail.com</a></p>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- FOOTER -->
-  <footer id="footer">
-    <div class="container">
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/meganmulcahy/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/MeganMulcahy" target="_blank"><i class="fab fa-github"></i></a>
-      </div>
-      <p class="mt-2 mb-0">&copy; <span id="year"></span> Megan Mulcahy</p>
+  <footer id="footer" class="site-footer">
+    <div class="container-main site-footer__inner">
+      <a href="https://www.linkedin.com/in/meganmulcahy/" target="_blank" rel="noopener noreferrer" class="icon-btn icon-btn--ghost" aria-label="LinkedIn">
+        <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+      <a href="https://github.com/MeganMulcahy" target="_blank" rel="noopener noreferrer" class="icon-btn icon-btn--ghost" aria-label="GitHub">
+        <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.31 24 12c0-6.63-5.37-12-12-12z"/></svg>
+      </a>
+      <p class="site-footer__copy">&copy; <span id="year"></span> Megan Mulcahy</p>
     </div>
   </footer>
 
