@@ -120,13 +120,13 @@ PROJECTS = [
     },
     {
         "slug": "cs-phd-portal",
-        "title": "CS PhD Student Data Collection Portal",
+        "title": "CS PhD Student Data Portal",
         "status": "archive",
-        "status_label": "Senior Design · UA",
+        "status_label": "Academic · UA",
         "category": "Academic",
-        "intro": "Web portal for CS PhD students to submit publications, talks, awards, and achievements each semester, with full-stack delivery.",
+        "intro": "Web application for the CS department to collect PhD student data each semester. Stack: React, Node.js, PostgreSQL, REST API.",
         "github": None,
-        "technologies": ["HTML/CSS", "JavaScript", "SQL", "Full-stack web"],
+        "technologies": ["React", "Node.js", "PostgreSQL", "REST API"],
     },
     {
         "slug": "chocan",

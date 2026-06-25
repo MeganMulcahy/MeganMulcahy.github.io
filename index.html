@@ -45,7 +45,6 @@
 
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
-          <li class="nav-item"><a class="nav-link" href="#experience">EXPERIENCE</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">PROJECTS</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">SKILLS</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
@@ -90,84 +89,6 @@
   </section>
 
   <main class="site-main">
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section-main">
-      <div class="container-main">
-        <header class="section-head section-head--narrow">
-          <p class="section-eyebrow">Background</p>
-          <h2 class="section-heading">Experience &amp; foundations</h2>
-          <p class="section-lead">
-            Industry co-op work plus a CS degree that covered systems from the metal up — not just frameworks.
-          </p>
-        </header>
-
-        <div class="experience-grid">
-          <article class="experience-card">
-            <p class="experience-card__org">Mercedes-Benz U.S. International</p>
-            <h3 class="experience-card__role">IT Co-op · Process automation &amp; analytics</h3>
-            <p class="experience-card__text">
-              Built Power BI dashboards, Power Apps workflows, and SQL-backed reporting for license compliance,
-              SLA/PO approvals, and audit tracking across IT and logistics.
-            </p>
-            <ul class="experience-card__bullets">
-              <li><strong>System design:</strong> connected Excel, SharePoint, SQL, and cloud sources into unified reporting pipelines with clear data ownership and refresh logic.</li>
-              <li><strong>Workflow architecture:</strong> designed approval routing, notifications, and audit trails in Power Automate so stakeholders could trace every state change.</li>
-            </ul>
-          </article>
-
-          <article class="experience-card">
-            <p class="experience-card__org">The University of Alabama</p>
-            <h3 class="experience-card__role">B.S. Computer Science · MBA (in progress)</h3>
-            <p class="experience-card__text">
-              Coursework and projects across algorithms, OOP, databases, software engineering, and low-level systems —
-              including assembly, memory models, and building interpreters from scratch.
-            </p>
-            <ul class="experience-card__bullets">
-              <li><strong>Senior design:</strong> full-stack CS PhD data collection portal with client delivery.</li>
-              <li><strong>Team software engineering:</strong> large Java systems with UML, persistence, and JUnit testing.</li>
-            </ul>
-          </article>
-        </div>
-
-        <div class="foundations-panel">
-          <h3 class="foundations-panel__title">Systems design &amp; how computers work</h3>
-          <p class="foundations-panel__lead">
-            A lot of new grads can call APIs but not explain what happens underneath. I can — and I design systems with that in mind.
-          </p>
-          <div class="foundations-grid">
-            <div class="foundations-item">
-              <h4 class="foundations-item__title">System design</h4>
-              <p class="foundations-item__text">
-                End-to-end architecture for AI pipelines and enterprise apps: ingestion → storage → retrieval → inference → API/UI.
-                Tradeoffs around latency, cost, failure modes, and data consistency (e.g. hybrid RAG retrieval, multi-source BI models).
-              </p>
-            </div>
-            <div class="foundations-item">
-              <h4 class="foundations-item__title">Memory &amp; execution</h4>
-              <p class="foundations-item__text">
-                Stack vs. heap, pointers, allocation, call stacks, and how program state lives in memory — so debugging and performance
-                issues are not a black box.
-              </p>
-            </div>
-            <div class="foundations-item">
-              <h4 class="foundations-item__title">Machine-level &amp; assembly</h4>
-              <p class="foundations-item__text">
-                Assembly/C coursework and low-level C projects: registers, instruction fetch–decode–execute, and how high-level code
-                maps to what the CPU actually runs.
-              </p>
-            </div>
-            <div class="foundations-item">
-              <h4 class="foundations-item__title">Language implementation</h4>
-              <p class="foundations-item__text">
-                Built a bytecode VM (C), a Lox interpreter, and a Lisp interpreter — lexing, parsing, evaluation, and runtime environments.
-                That means I understand parsing, scopes, and what “running code” really means.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- PROJECTS — card grid (common portfolio pattern) -->
     <section id="projects" class="section-main section-main--muted">
       <div class="container-main">
@@ -177,7 +98,7 @@
           <p class="section-lead">
             AI/ML engineering work aligned with my
             <a href="https://github.com/MeganMulcahy" target="_blank" rel="noopener noreferrer">GitHub profile</a>,
-            plus enterprise automation and academic foundations. Each card links to a deep-dive write-up for interview prep.
+            plus enterprise automation and academic projects. Each card links to a deep-dive write-up for interview prep.
           </p>
         </header>
 
@@ -280,30 +201,62 @@
         <div class="project-group">
           <h3 class="project-group__title">Enterprise · Mercedes-Benz U.S. International</h3>
           <div class="project-grid">
-            <article class="project-card project-card--compact">
+            <article class="project-card">
               <h4 class="project-card__title">Power BI License Dashboard</h4>
-              <p class="project-card__text">License counts, allocation, and utilization across Excel, SharePoint, SQL, and cloud sources.</p>
+              <p class="project-card__meta">Power BI · DAX · SQL · SharePoint</p>
+              <p class="project-card__text">
+                Replaced scattered Excel trackers and SharePoint lists with a unified executive dashboard giving IT leadership
+                real-time visibility into Microsoft license inventory, department allocation, and utilization. Built advanced DAX
+                measures across SQL- and cloud-connected datasets so the team could spot overspend and redeploy unused seats before renewal cycles.
+              </p>
+              <ul class="project-card__tags">
+                <li>Power BI</li><li>DAX</li><li>SQL</li><li>SharePoint</li>
+              </ul>
               <div class="project-card__actions">
                 <a href="project-docs/power-bi-license/index.html" class="project-card__link">Deep dive →</a>
               </div>
             </article>
-            <article class="project-card project-card--compact">
+            <article class="project-card">
               <h4 class="project-card__title">Power BI Compliance Dashboard</h4>
-              <p class="project-card__text">Expiration timelines, risk flags, and audit-ready drill-throughs for leadership.</p>
+              <p class="project-card__meta">Compliance reporting · Drill-through · Audit readiness</p>
+              <p class="project-card__text">
+                Gave compliance and IT stakeholders a single view of license expiration risk, overdue renewals, and audit readiness—
+                replacing manual spreadsheet reviews before leadership meetings. Designed drill-through pages and dynamic slicers so
+                managers could trace any license from summary KPIs down to individual seat assignments during internal audits.
+              </p>
+              <ul class="project-card__tags">
+                <li>Power BI</li><li>DAX</li><li>Compliance KPIs</li>
+              </ul>
               <div class="project-card__actions">
                 <a href="project-docs/power-bi-compliance/index.html" class="project-card__link">Deep dive →</a>
               </div>
             </article>
-            <article class="project-card project-card--compact">
+            <article class="project-card">
               <h4 class="project-card__title">Power Apps SLA/PO Workflow</h4>
-              <p class="project-card__text">Digitized approvals with Power Automate routing, notifications, and logs.</p>
+              <p class="project-card__meta">Power Apps · Power Automate · SharePoint</p>
+              <p class="project-card__text">
+                Eliminated email-based SLA and purchase-order approvals that were slow to track and easy to lose. Built a Power Apps
+                front end with Automate flows that route requests to the right approvers, send status notifications, and log every
+                decision in SharePoint with timestamps—shortening approval cycles and giving logistics clear visibility into open POs.
+              </p>
+              <ul class="project-card__tags">
+                <li>Power Apps</li><li>Power Automate</li><li>SharePoint</li>
+              </ul>
               <div class="project-card__actions">
                 <a href="project-docs/power-apps-sla/index.html" class="project-card__link">Deep dive →</a>
               </div>
             </article>
-            <article class="project-card project-card--compact">
+            <article class="project-card">
               <h4 class="project-card__title">Power Apps Audit &amp; Task Tracker</h4>
-              <p class="project-card__text">Centralized audit tasks, reminders, and compliance history across departments.</p>
+              <p class="project-card__meta">Power Apps · Power Automate · Cross-department</p>
+              <p class="project-card__text">
+                Replaced ad hoc email reminders for IT audit work with a department-wide tracker for recurring compliance tasks.
+                The app assigns owners, sends automated follow-ups, and preserves full task history so audits no longer depend on
+                individual inboxes—improving accountability across IT and supporting teams ahead of review periods.
+              </p>
+              <ul class="project-card__tags">
+                <li>Power Apps</li><li>Power Automate</li><li>SharePoint</li>
+              </ul>
               <div class="project-card__actions">
                 <a href="project-docs/power-apps-audit/index.html" class="project-card__link">Deep dive →</a>
               </div>
@@ -314,23 +267,32 @@
         <div class="project-group">
           <h3 class="project-group__title">Systems &amp; language implementation</h3>
           <div class="project-grid">
-            <article class="project-card project-card--compact">
-              <h4 class="project-card__title">Bytecode VM (C)</h4>
-              <p class="project-card__text">Stack-based virtual machine in C — chunks, opcodes, compiler, and runtime execution (Crafting Interpreters–style).</p>
-              <div class="project-card__actions">
-                <a href="Projects/Byte Interpreter/indexByte.html" target="_blank" rel="noopener noreferrer" class="project-card__link">Demo →</a>
-              </div>
-            </article>
-            <article class="project-card project-card--compact">
+            <article class="project-card">
               <h4 class="project-card__title">Lox Interpreter</h4>
-              <p class="project-card__text">Full interpreter pipeline: scanner, parser, AST evaluation, environments, and functions in C#.</p>
+              <p class="project-card__meta">C# · Scanner · Parser · AST evaluation</p>
+              <p class="project-card__text">
+                Implemented a complete programming language interpreter from scratch—lexical analysis, recursive-descent parsing,
+                tree-walk evaluation, closures, and first-class functions. Demonstrates how source code becomes executable behavior:
+                scope resolution, call stacks, and runtime environments—not just calling library APIs.
+              </p>
+              <ul class="project-card__tags">
+                <li>C#</li><li>Parsing</li><li>Environments</li><li>Closures</li>
+              </ul>
               <div class="project-card__actions">
                 <a href="Projects/Lox Interpreter Web/indexLox.html" target="_blank" rel="noopener noreferrer" class="project-card__link">Demo →</a>
               </div>
             </article>
-            <article class="project-card project-card--compact">
+            <article class="project-card">
               <h4 class="project-card__title">Lisp Interpreter</h4>
-              <p class="project-card__text">S-expression language with lexer, parser, and evaluator — classic CS exercise in symbolic computation.</p>
+              <p class="project-card__meta">C# · S-expressions · Eval/apply</p>
+              <p class="project-card__text">
+                Built a Lisp dialect interpreter handling S-expression parsing, special forms, and recursive evaluation—the same
+                eval/apply model used in symbolic AI and language tooling. Shows understanding of how languages represent data and
+                code as structured trees in memory.
+              </p>
+              <ul class="project-card__tags">
+                <li>C#</li><li>Functional eval</li><li>Symbolic computation</li>
+              </ul>
               <div class="project-card__actions">
                 <a href="Projects/Lisp Interpreter/indexLisp.html" target="_blank" rel="noopener noreferrer" class="project-card__link">Demo →</a>
               </div>
@@ -339,18 +301,35 @@
         </div>
 
         <div class="project-group">
-          <h3 class="project-group__title">Academic foundations</h3>
+          <h3 class="project-group__title">Academic projects</h3>
           <div class="project-grid">
-            <article class="project-card project-card--compact">
-              <h4 class="project-card__title">CS PhD Student Data Collection Portal</h4>
-              <p class="project-card__text">Senior design portal for publications, talks, awards, and achievements each semester.</p>
+            <article class="project-card">
+              <h4 class="project-card__title">CS PhD Student Data Portal</h4>
+              <p class="project-card__meta">React · Node.js · PostgreSQL · REST API</p>
+              <p class="project-card__text">
+                Web application for the CS department to collect PhD student data each semester—publications, conference talks,
+                awards, teaching, and research milestones—replacing manual email submissions and inconsistent spreadsheets. Delivered
+                role-based forms, validated backend APIs, and persistent storage so faculty administrators can query and export
+                department records on demand.
+              </p>
+              <ul class="project-card__tags">
+                <li>React</li><li>Node.js</li><li>PostgreSQL</li><li>REST API</li>
+              </ul>
               <div class="project-card__actions">
                 <a href="project-docs/cs-phd-portal/index.html" class="project-card__link">Deep dive →</a>
               </div>
             </article>
-            <article class="project-card project-card--compact">
+            <article class="project-card">
               <h4 class="project-card__title">ChocAn Data Center</h4>
-              <p class="project-card__text">Team Java system for healthcare billing, providers, and services with UML and persistence.</p>
+              <p class="project-card__meta">Java · OOP · UML · Team software engineering</p>
+              <p class="project-card__text">
+                Four-person team project simulating a healthcare data center: member and provider management, service records,
+                weekly billing reports, EFT file generation, and separate terminal interfaces for managers, providers, and operators.
+                Applied UML design, modular Java architecture, file-based persistence, and JUnit testing for a production-style deliverable.
+              </p>
+              <ul class="project-card__tags">
+                <li>Java</li><li>UML</li><li>JUnit</li><li>File I/O</li>
+              </ul>
               <div class="project-card__actions">
                 <a href="Projects/ChocAn/ChocAn/indexChocAn.html" target="_blank" rel="noopener noreferrer" class="project-card__link">Demo →</a>
                 <a href="project-docs/chocan/index.html" class="project-card__link project-card__link--secondary">Deep dive →</a>
@@ -400,24 +379,21 @@
             </ul>
           </div>
 
-          <div class="skills-block skills-block--wide skills-block--split">
-            <div class="skills-split">
-              <div>
-                <h3 class="skills-block__title">Infra &amp; backend</h3>
-                <ul class="skill-pills">
-                  <li>FastAPI</li><li>PostgreSQL</li><li>Docker</li>
-                  <li>Google Cloud</li><li>Linux</li><li>Git</li>
-                </ul>
-              </div>
-              <div>
-                <h3 class="skills-block__title">System design &amp; CS foundations</h3>
-                <ul class="skill-pills">
-                  <li>System design</li><li>API architecture</li><li>Data pipelines</li>
-                  <li>Memory &amp; pointers</li><li>Assembly/C</li><li>Compilers &amp; interpreters</li>
-                  <li>Operating systems</li><li>Algorithms</li>
-                </ul>
-              </div>
-            </div>
+          <div class="skills-block">
+            <h3 class="skills-block__title">Infra &amp; backend</h3>
+            <ul class="skill-pills">
+              <li>FastAPI</li><li>PostgreSQL</li><li>Docker</li>
+              <li>Google Cloud</li><li>Linux</li><li>Git</li>
+            </ul>
+          </div>
+
+          <div class="skills-block">
+            <h3 class="skills-block__title">System design &amp; CS foundations</h3>
+            <ul class="skill-pills">
+              <li>System design</li><li>API architecture</li><li>Data pipelines</li>
+              <li>Memory &amp; pointers</li><li>Assembly/C</li><li>Compilers &amp; interpreters</li>
+              <li>Operating systems</li><li>Algorithms</li>
+            </ul>
           </div>
 
           <div class="skills-block skills-block--wide">
