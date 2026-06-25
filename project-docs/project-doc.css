@@ -1,0 +1,233 @@
+/* Long-form project deep-dive pages — country club palette, Inter for readability */
+.project-doc-page {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  background: var(--cc-paper);
+  color: var(--cc-ink);
+}
+
+.project-doc-page h1,
+.project-doc-page h2,
+.project-doc-page h3,
+.project-doc-page h4 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  color: var(--cc-forest-deep);
+}
+
+.project-doc-nav {
+  background: #fff;
+  border-bottom: 1px solid var(--cc-rule);
+  padding: 0.85rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.project-doc-nav__inner {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.project-doc-nav__back {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--cc-pine);
+  text-decoration: none !important;
+}
+
+.project-doc-nav__back:hover {
+  color: var(--cc-forest-deep);
+}
+
+.project-doc-nav__links {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.project-doc-nav__links a {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--cc-sage);
+  text-decoration: none !important;
+}
+
+.project-doc-nav__links a:hover {
+  color: var(--cc-forest);
+}
+
+.project-doc {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+}
+
+.project-doc__header {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid var(--cc-rule);
+}
+
+.project-doc__eyebrow {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--cc-pine);
+  margin: 0 0 0.5rem;
+}
+
+.project-doc__title {
+  font-size: clamp(1.75rem, 4vw, 2.35rem);
+  margin: 0 0 0.75rem;
+  line-height: 1.2;
+}
+
+.project-doc__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-doc__badge {
+  display: inline-block;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.project-doc__badge--live {
+  background: #e8f3ec;
+  color: #1a4d3c;
+  border: 1px solid rgba(26, 77, 60, 0.2);
+}
+
+.project-doc__badge--progress {
+  background: #f4f1ea;
+  color: #6b5a2e;
+  border: 1px solid rgba(107, 90, 46, 0.25);
+}
+
+.project-doc__badge--archive {
+  background: #eef0ef;
+  color: #4a5c54;
+  border: 1px solid rgba(74, 92, 84, 0.2);
+}
+
+.project-doc__intro {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--cc-ink-soft);
+  line-height: 1.65;
+}
+
+.project-doc__section {
+  margin-bottom: 2.25rem;
+}
+
+.project-doc__section > h2 {
+  font-size: 1.35rem;
+  margin: 0 0 1rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 2px solid rgba(45, 106, 82, 0.2);
+}
+
+.project-doc__section > h3 {
+  font-size: 1.05rem;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.project-doc__section p,
+.project-doc__section li {
+  color: #3d4d45;
+}
+
+.project-doc__section ul,
+.project-doc__section ol {
+  padding-left: 1.25rem;
+}
+
+.doc-placeholder {
+  margin: 0;
+  padding: 1rem 1.15rem;
+  background: #fff;
+  border: 1px dashed rgba(26, 77, 60, 0.28);
+  border-radius: 10px;
+  color: #5c8570;
+  font-size: 0.92rem;
+  font-style: italic;
+}
+
+.tech-deep-dive {
+  margin-top: 1rem;
+}
+
+.tech-deep-dive__item {
+  background: #fff;
+  border: 1px solid rgba(26, 77, 60, 0.1);
+  border-radius: 12px;
+  padding: 1.15rem 1.25rem;
+  margin-bottom: 0.85rem;
+  box-shadow: 0 2px 12px rgba(15, 51, 40, 0.04);
+}
+
+.tech-deep-dive__item h4 {
+  margin: 0 0 0.65rem;
+  font-size: 0.95rem;
+  font-family: "Inter", system-ui, sans-serif;
+  font-weight: 600;
+  color: var(--cc-forest);
+}
+
+.tech-deep-dive__item dl {
+  margin: 0;
+}
+
+.tech-deep-dive__item dt {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--cc-pine);
+  margin-top: 0.65rem;
+}
+
+.tech-deep-dive__item dt:first-child {
+  margin-top: 0;
+}
+
+.tech-deep-dive__item dd {
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+  color: #4a5c54;
+}
+
+.doc-callout {
+  background: linear-gradient(145deg, #143d30 0%, #0f3328 100%);
+  color: #fff;
+  border-radius: 12px;
+  padding: 1.25rem 1.35rem;
+  margin-top: 2rem;
+}
+
+.doc-callout h3 {
+  color: #fff;
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.doc-callout p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.92rem;
+}

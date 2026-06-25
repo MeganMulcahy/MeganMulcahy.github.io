@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>RAG Pipeline (LlamaIndex) · Deep Dive · Megan Mulcahy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="../project-doc.css" />
+</head>
+<body class="project-doc-page">
+  <nav class="project-doc-nav">
+    <div class="project-doc-nav__inner">
+      <a class="project-doc-nav__back" href="../../index.html#projects">← Back to portfolio</a>
+      <div class="project-doc-nav__links">
+        <a href="https://github.com/MeganMulcahy/RAG-Pipeline-using-LlamaIndex" target="_blank" rel="noopener noreferrer">GitHub repo</a>
+        <a href="../../index.html">Home</a>
+      </div>
+    </div>
+  </nav>
+
+  <article class="project-doc">
+    <header class="project-doc__header">
+      <p class="project-doc__eyebrow">AI / ML · Project deep dive</p>
+      <h1 class="project-doc__title">RAG Pipeline (LlamaIndex)</h1>
+      <div class="project-doc__meta">
+        <span class="project-doc__badge project-doc__badge--live">Live on GitHub</span>
+      </div>
+      <p class="project-doc__intro">AI-powered mortgage document assistant: upload a PDF and query it. Hybrid retrieval (vector + BM25) with cross-encoder reranking and Google Gemini for grounded answers.</p>
+    </header>
+
+    <section class="project-doc__section" id="summary">
+      <h2>Executive summary</h2>
+      <p class="doc-placeholder">Write a 3–4 sentence pitch: what this project does, who it is for, and the main technical outcome. Use this as your 30-second interview opener.</p>
+    </section>
+
+    <section class="project-doc__section" id="problem">
+      <h2>Problem &amp; motivation</h2>
+      <p class="doc-placeholder">What pain point does this solve? Why did you build it? What would happen without this system?</p>
+    </section>
+
+    <section class="project-doc__section" id="architecture">
+      <h2>System architecture</h2>
+      <p class="doc-placeholder">Describe components (ingest, storage, retrieval, inference, UI/API). Add a diagram if helpful. Explain how data flows end-to-end.</p>
+      <h3>Pipeline / workflow steps</h3>
+      <ol>
+        <li class="doc-placeholder" style="list-style: decimal;">Step 1 — (e.g., ingest, parse, chunk, embed…)</li>
+        <li class="doc-placeholder" style="list-style: decimal;">Step 2 — …</li>
+        <li class="doc-placeholder" style="list-style: decimal;">Step 3 — …</li>
+      </ol>
+    </section>
+
+    <section class="project-doc__section" id="tech-deep-dive">
+      <h2>Technology deep dive</h2>
+      <p>For each tool below, fill in <strong>what it is</strong>, <strong>why you chose it</strong>, and <strong>how you use it in this project</strong>. This is your interview cheat sheet.</p>
+      <div class="tech-deep-dive">
+        
+        <div class="tech-deep-dive__item">
+          <h4>Python</h4>
+          <dl>
+            <dt>What is it?</dt>
+            <dd class="doc-placeholder" style="margin-bottom:0.5rem;border:none;box-shadow:none;padding:0.65rem 0.75rem;">Define Python in plain language.</dd>
+            <dt>Why this project?</dt>
+            <dd class="doc-placeholder" style="margin-bottom:0.5rem;border:none;box-shadow:none;padding:0.65rem 0.75rem;">Why Python over alternatives?</dd>
+            <dt>How I use it here</dt>
+            <dd class="doc-placeholder" style="border:none;box-shadow:none;padding:0.65rem 0.75rem;">Specific modules, APIs, configs, and data flow involving Python.</dd>
+          </dl>
+        </div>
+        <div class="tech-deep-dive__item">
+          <h4>LlamaIndex</h4>
+          <dl>
+            <dt>What is it?</dt>
+            <dd class="doc-placeholder" style="margin-bottom:0.5rem;border:none;box-shadow:none;padding:0.65rem 0.75rem;">Define LlamaIndex in plain language.</dd>
+            <dt>Why this project?</dt>
+            <dd class="doc-placeholder" style="margin-bottom:0.5rem;border:none;box-shadow:none;padding:0.65rem 0.75rem;">Why LlamaIndex over alternatives?</dd>
+            <dt>How I use it here</dt>
+            <dd class="doc-placeholder" style="border:none;box-shadow:none;padding:0.65rem 0.75rem;">Specific modules, APIs, configs, and data flow involving LlamaIndex.</dd>
+          </dl>
+        </div>
+        <div class="tech-deep-dive__item">
+          <h4>LangChain</h4>
+          <dl>
+            <dt>What is it?</dt>
+            <dd class="doc-placeholder" style="margin-bottom:0.5rem;border:none;box-shadow:none;padding:0.65rem 0.75rem;">Define LangChain in plain language.</dd>
+            <dt>Why this project?</dt>
+            <dd class="doc-placeholder" style="margin-bottom:0.5rem;border:none;box-shadow:none;padding:0.65rem 0.75rem;">Why LangChain over alternatives?</dd>
+            <dt>How I use it here</dt>
+            <dd class="doc-placeholder" style="border:none;box-shadow:none;padding:0.65rem 0.75rem;">Specific modules, APIs, configs, and data flow involving LangChain.</dd>
+          </dl>
+        </div>
+        <div class="tech-deep-dive__item">
+          <h4>Google Gemini</h4>
+          <dl>
+            <dt>What is it?</dt>
+            <dd class="doc-placeholder" style="margin-bottom:0.5rem;border:none;box-shadow:none;padding:0.65rem 0.75rem;">Define Google Gemini in plain language.</dd>
+            <dt>Why this project?</dt>
+            <dd class="doc-placeholder" style="margin-bottom:0.5rem;border:none;box-shadow:none;padding:0.65rem 0.75rem;">Why Google Gemini over alternatives?</dd>
+            <dt>How I use it here</dt>
+            <dd class="doc-placeholder" style="border:none;box-shadow:none;padding:0.65rem 0.75rem;">Specific modules, APIs, configs, and data flow involving Google Gemini.</dd>
+          </dl>
+        </div>
+        <div class="tech-deep-dive__item">
+          <h4>ChromaDB</h4>
+          <dl>
+            <dt>What is it?</dt>
+            <dd class="doc-placeholder" style="margin-bottom:0.5rem;border:none;box-shadow:none;padding:0.65rem 0.75rem;">Define ChromaDB in plain language.</dd>
+            <dt>Why this project?</dt>
+            <dd class="doc-placeholder" style="margin-bottom:0.5rem;border:none;box-shadow:none;padding:0.65rem 0.75rem;">Why ChromaDB over alternatives?</dd>
+            <dt>How I use it here</dt>
+            <dd class="doc-placeholder" style="border:none;box-shadow:none;padding:0.65rem 0.75rem;">Specific modules, APIs, configs, and data flow involving ChromaDB.</dd>
+          </dl>
+        </div>
+        <div class="tech-deep-dive__item">
+          <h4>BM25</h4>
+          <dl>
+            <dt>What is it?</dt>
+            <dd class="doc-placeholder" style="margin-bottom:0.5rem;border:none;box-shadow:none;padding:0.65rem 0.75rem;">Define BM25 in plain language.</dd>
+            <dt>Why this project?</dt>
+            <dd class="doc-placeholder" style="margin-bottom:0.5rem;border:none;box-shadow:none;padding:0.65rem 0.75rem;">Why BM25 over alternatives?</dd>
+            <dt>How I use it here</dt>
+            <dd class="doc-placeholder" style="border:none;box-shadow:none;padding:0.65rem 0.75rem;">Specific modules, APIs, configs, and data flow involving BM25.</dd>
+          </dl>
+        </div>
+        <div class="tech-deep-dive__item">
+          <h4>Cross-encoder reranking</h4>
+          <dl>
+            <dt>What is it?</dt>
+            <dd class="doc-placeholder" style="margin-bottom:0.5rem;border:none;box-shadow:none;padding:0.65rem 0.75rem;">Define Cross-encoder reranking in plain language.</dd>
+            <dt>Why this project?</dt>
+            <dd class="doc-placeholder" style="margin-bottom:0.5rem;border:none;box-shadow:none;padding:0.65rem 0.75rem;">Why Cross-encoder reranking over alternatives?</dd>
+            <dt>How I use it here</dt>
+            <dd class="doc-placeholder" style="border:none;box-shadow:none;padding:0.65rem 0.75rem;">Specific modules, APIs, configs, and data flow involving Cross-encoder reranking.</dd>
+          </dl>
+        </div>
+        <div class="tech-deep-dive__item">
+          <h4>PyMuPDF</h4>
+          <dl>
+            <dt>What is it?</dt>
+            <dd class="doc-placeholder" style="margin-bottom:0.5rem;border:none;box-shadow:none;padding:0.65rem 0.75rem;">Define PyMuPDF in plain language.</dd>
+            <dt>Why this project?</dt>
+            <dd class="doc-placeholder" style="margin-bottom:0.5rem;border:none;box-shadow:none;padding:0.65rem 0.75rem;">Why PyMuPDF over alternatives?</dd>
+            <dt>How I use it here</dt>
+            <dd class="doc-placeholder" style="border:none;box-shadow:none;padding:0.65rem 0.75rem;">Specific modules, APIs, configs, and data flow involving PyMuPDF.</dd>
+          </dl>
+        </div>
+        <div class="tech-deep-dive__item">
+          <h4>sentence-transformers</h4>
+          <dl>
+            <dt>What is it?</dt>
+            <dd class="doc-placeholder" style="margin-bottom:0.5rem;border:none;box-shadow:none;padding:0.65rem 0.75rem;">Define sentence-transformers in plain language.</dd>
+            <dt>Why this project?</dt>
+            <dd class="doc-placeholder" style="margin-bottom:0.5rem;border:none;box-shadow:none;padding:0.65rem 0.75rem;">Why sentence-transformers over alternatives?</dd>
+            <dt>How I use it here</dt>
+            <dd class="doc-placeholder" style="border:none;box-shadow:none;padding:0.65rem 0.75rem;">Specific modules, APIs, configs, and data flow involving sentence-transformers.</dd>
+          </dl>
+        </div>
+        <div class="tech-deep-dive__item">
+          <h4>RAGAs</h4>
+          <dl>
+            <dt>What is it?</dt>
+            <dd class="doc-placeholder" style="margin-bottom:0.5rem;border:none;box-shadow:none;padding:0.65rem 0.75rem;">Define RAGAs in plain language.</dd>
+            <dt>Why this project?</dt>
+            <dd class="doc-placeholder" style="margin-bottom:0.5rem;border:none;box-shadow:none;padding:0.65rem 0.75rem;">Why RAGAs over alternatives?</dd>
+            <dt>How I use it here</dt>
+            <dd class="doc-placeholder" style="border:none;box-shadow:none;padding:0.65rem 0.75rem;">Specific modules, APIs, configs, and data flow involving RAGAs.</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-doc__section" id="decisions">
+      <h2>Key design decisions</h2>
+      <p class="doc-placeholder">Document tradeoffs you made (e.g., hybrid retrieval vs. pure vector, cloud LLM vs. local, batch vs. streaming). Explain the &ldquo;deeper why&rdquo; behind each choice.</p>
+    </section>
+
+    <section class="project-doc__section" id="challenges">
+      <h2>Challenges &amp; how I solved them</h2>
+      <p class="doc-placeholder">What broke? What was harder than expected? How did you debug, measure, or iterate?</p>
+    </section>
+
+    <section class="project-doc__section" id="evaluation">
+      <h2>Evaluation &amp; metrics</h2>
+      <p class="doc-placeholder">How do you know it works? (accuracy, latency, RAGAs scores, ATS match rate, scrape success rate, etc.)</p>
+    </section>
+
+    <section class="project-doc__section" id="future">
+      <h2>Future improvements</h2>
+      <p class="doc-placeholder">What would you build next with more time? What would you refactor?</p>
+    </section>
+
+    <aside class="doc-callout">
+      <h3>Interview talking points</h3>
+      <p class="doc-placeholder" style="background: transparent; border: none; padding: 0; color: rgba(255,255,255,0.85); font-style: normal;">List 3–5 bullet points you want recruiters to remember after you explain this project.</p>
+    </aside>
+  </article>
+</body>
+</html>
