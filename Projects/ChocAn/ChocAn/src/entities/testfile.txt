@@ -1,3 +1,0 @@
-fries,burger,coke
-wafflefries,chickensandwich,pepsi
-chipsandsalsa,burrito,margherita

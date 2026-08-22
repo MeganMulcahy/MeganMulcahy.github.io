@@ -1,440 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>Megan Mulcahy · AI/ML Engineer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap"
-    rel="stylesheet"
-  />
-
-  <!-- Bootstrap (for grid/layout only) -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
-
-  <!-- Custom styles -->
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Megan Mulcahy — Data Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Parisienne&family=Petit+Formal+Script&family=Sacramento&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-cc">
-    <div class="container position-relative">
-      <button
-        class="navbar-toggler navbar-toggler-cc border-0 shadow-none"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#mainNav"
-        aria-controls="mainNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<div class="pad">
+<header style="position:relative"><div class="mk">Megan Mulcahy</div><nav><a href="#data">Enterprise Data projects</a><a href="#ai">AI &amp; software</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav></header>
+</div>
 
-      <a class="navbar-brand navbar-brand-center mb-0" href="#home">Megan Mulcahy</a>
+<div class="pad" style="position:relative">
+<section class="hero">
+<h1>Megan Mulcahy</h1>
+<p class="eye">SQL · Python · Data pipelines · Analytics engineer · Dallas</p>
+<div class="txt">
+<div class="rule"></div>
+<p class="lede">I build data pipelines and integration layers that turn messy, multi-source enterprise data into reliable, queryable reporting, with production co-op experience at Mercedes-Benz U.S. International.</p>
+<div class="btns"><a href="mailto:megan.mulcahy03@gmail.com">Get in touch</a><a href="https://github.com/MeganMulcahy">GitHub</a><a href="https://linkedin.com/in/meganmulcahy">LinkedIn</a></div>
+</div>
+</section>
+</div>
 
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
-          <li class="nav-item"><a class="nav-link" href="#projects">PROJECTS</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">SKILLS</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
-          <li class="nav-item">
-            <a class="nav-link" href="Megan Mulcahy Resume.pdf" target="_blank">
-              <i class="fa fa-download" aria-hidden="true"></i>&nbsp;RESUME
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<div class="band">
+<div class="pad inset"><section class="blk" id="data">
+<div class="hd"><h2>Enterprise data projects</h2><span class="fname">Parisienne</span></div>
+<div class="cards">
 
-  <!-- HERO -->
-  <section id="home" class="bg-hero">
-    <div class="container hero-text">
-      <p class="hero-kicker">PYTHON · LLMs · RAG PIPELINES · NEW GRAD AI/ML · DALLAS</p>
-      <h1 class="hero_title">Hi, I’m Megan Mulcahy.</h1>
-      <p class="hero_desc">
-        B.S. in Computer Science from The University of Alabama and MBA candidate at the Manderson Graduate School of Business.
-        I build <strong>AI/ML systems</strong> — RAG pipelines, document intelligence, and applied machine learning — with
-        a strong foundation in <strong>system design, Python backends, and how software runs on hardware</strong>
-        (memory, execution, and language internals).
-      </p>
-      <p class="hero_desc">
-        Co-op experience at <strong>Mercedes-Benz U.S. International</strong> in process automation, IT, and logistics.
-        Seeking <strong>new grad and junior AI/ML engineering roles</strong> in the Dallas area.
-      </p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary-accent me-2">View Projects</a>
-        <a href="#contact" class="btn btn-outline-light-accent">Get in Touch</a>
-      </div>
-      <div class="hero-social">
-        <a href="https://www.linkedin.com/in/meganmulcahy/" target="_blank" rel="noopener noreferrer" class="hero-social-link" aria-label="LinkedIn">
-          <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </a>
-        <a href="https://github.com/MeganMulcahy" target="_blank" rel="noopener noreferrer" class="hero-social-link" aria-label="GitHub">
-          <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.31 24 12c0-6.63-5.37-12-12-12z"/></svg>
-        </a>
-      </div>
-    </div>
-  </section>
+<article class="cd">
+<div class="sh"><img src="assets/project-sla.png" alt="SLA cost and procurement data model dashboard"></div>
+<span class="when">Jan 2025 – Aug 2025</span>
+<h3>SLA Cost &amp; Procurement Data Model</h3>
+<p class="desc">Integrated Service Level Agreements (SLAs), Purchase Requisitions (PRs), and Purchase Orders (POs) across C4MB, cbFC, and SAP into a unified Power BI cost tracking data model, establishing pricing transparency, payment accuracy, and manager accountability across three systems that had never shared structured data. Engineered the SLA-to-PR matching logic from scratch by parsing SLA codes manually appended to cbFC PR short text fields, splitting and extracting them during export to match against C4MB agreement records, with each SLA and associated PR mapped to the responsible E3. Implemented EUR/USD currency conversion using a monthly exchange rate key file indexed by agreement creation date, enabling accurate cost comparison across contracts with mixed currency terms. Delivered a scalable, scheduled-refresh reporting solution used in daily governance meetings to track SLA completion status, forecast vs. actual cost progression, and approved volume by agreement.</p>
+</article>
 
-  <main class="site-main">
-    <!-- PROJECTS — card grid (common portfolio pattern) -->
-    <section id="projects" class="section-main section-main--muted">
-      <div class="container-main">
-        <header class="section-head">
-          <p class="section-eyebrow">Portfolio</p>
-          <h2 class="section-heading">Projects</h2>
-          <p class="section-lead">
-            AI/ML engineering work aligned with my
-            <a href="https://github.com/MeganMulcahy" target="_blank" rel="noopener noreferrer">GitHub profile</a>,
-            plus enterprise automation and academic projects. Each card links to a deep-dive write-up for interview prep.
-          </p>
-        </header>
+<article class="cd">
+<div class="sh"><img src="assets/project-container.png" alt="Supply chain container tracking dashboard"></div>
+<span class="when">Sep 2024 – Dec 2024</span>
+<h3>Supply Chain Container Tracking Pipeline</h3>
+<p class="desc">Created the container tracking capability that gave supply chain and logistics teams near real-time visibility across the full automotive logistics pipeline (inbound shipment origin through port of entry, customs clearance, inbound transfer, yard positioning, and final warehouse destination at MBUSI) by integrating structured data from internal SQL databases with external ICL systems. Designed and engineered a unified data model to consolidate heterogeneous, multi-source datasets, enabling scalable data aggregation and consistent business logic across shipping events, container status updates, and part-level identifiers. Implemented optimized data transformation and query pipelines to improve refresh performance and enable near real-time observability of logistics workflows. Delivered interactive, decision-support visualizations to enhance operational intelligence, supporting faster data-driven decision-making and improved supply chain visibility.</p>
+</article>
 
-        <div class="project-group">
-          <h3 class="project-group__title">AI / ML engineering</h3>
-          <div class="project-grid">
-            <article class="project-card project-card--featured">
-              <span class="project-card__status project-card__status--live">Live</span>
-              <h4 class="project-card__title">RAG Pipeline (LlamaIndex)</h4>
-              <p class="project-card__meta">Python · Hybrid retrieval · Gemini</p>
-              <p class="project-card__text">
-                Mortgage document assistant: upload a PDF and query it. Hybrid retrieval (vector + BM25), cross-encoder reranking, and Google Gemini for grounded answers.
-              </p>
-              <ul class="project-card__tags">
-                <li>LlamaIndex</li><li>ChromaDB</li><li>PyMuPDF</li><li>RAGAs</li>
-              </ul>
-              <div class="project-card__actions">
-                <a href="https://github.com/MeganMulcahy/RAG-Pipeline-using-LlamaIndex" target="_blank" rel="noopener noreferrer" class="project-card__link">GitHub →</a>
-                <a href="project-docs/rag-pipeline/index.html" class="project-card__link project-card__link--secondary">Deep dive →</a>
-              </div>
-            </article>
+<article class="cd">
+<div class="sh"><img src="assets/project-license.png" alt="License and compliance analytics dashboard"></div>
+<span class="when">Jan 2025 – May 2025</span>
+<h3>License &amp; Compliance Analytics Integration</h3>
+<p class="desc">Centralized software license management and utilization tracking into an enterprise analytics dashboard structured around E3 licensing, with drill-down capabilities into publishers, products, end users, and associated cost drivers. Engineered a unified data layer by integrating and cleansing data from 15+ disparate enterprise sources, ensuring consistent schema alignment and reliable reporting across systems. Implemented scalable data modeling and transformation logic to support near real-time visibility into license consumption and allocation. Delivered actionable analytics enabling leadership to identify cost optimization opportunities, reduce underutilized licenses, and improve vendor accountability through data-driven decision-making.</p>
+</article>
 
-            <article class="project-card">
-              <span class="project-card__status">In progress</span>
-              <h4 class="project-card__title">Resume Scraper</h4>
-              <p class="project-card__meta">Document intelligence · Parsing</p>
-              <p class="project-card__text">
-                Extracts structured resume data from PDFs and web sources to power parsing, scoring, and autofill workflows.
-              </p>
-              <ul class="project-card__tags">
-                <li>PyMuPDF</li><li>PaddleOCR</li><li>FastAPI</li>
-              </ul>
-              <div class="project-card__actions">
-                <a href="project-docs/resume-scraper/index.html" class="project-card__link">Deep dive →</a>
-              </div>
-            </article>
+<article class="cd">
+<div class="sh"><img src="assets/project-approval.png" alt="PR/SLA approval and governance app"></div>
+<span class="when">Jan 2025 – Aug 2025</span>
+<h3>PR/SLA Approval &amp; Governance App</h3>
+<p class="desc">Automated the SLA-to-PO approval tracking workflow that feeds CEO-level financial reporting at MBUSI, linking Service Level Agreements (SLAs) to Purchase Orders (POs) by integrating and standardizing data from C4MB and cbFC into a unified, query-driven reporting layer. Replaced repeated manual exports and error-prone data stitching with standardized transformation rules and an automated pipeline, establishing this as the new organizational standard for SLA approval input and reporting. Designed relational data logic using agreement-level identifiers to connect previously siloed financial and operational datasets, enabling consistent tracking of approvals, budget status, and SLA execution. Delivered a scalable, near real-time reporting solution centralizing financial and operational performance visibility for executive decision-making.</p>
+</article>
 
-            <article class="project-card">
-              <span class="project-card__status">In progress</span>
-              <h4 class="project-card__title">Resume Autofill &amp; ATS Scoring</h4>
-              <p class="project-card__meta">LLMs · Job matching · Automation</p>
-              <p class="project-card__text">
-                Autofills application forms from a master resume profile and scores resume–job-description fit ATS-style with explainable gaps.
-              </p>
-              <ul class="project-card__tags">
-                <li>OpenAI</li><li>Gemini</li><li>sentence-transformers</li>
-              </ul>
-              <div class="project-card__actions">
-                <a href="project-docs/resume-autofill-ats/index.html" class="project-card__link">Deep dive →</a>
-              </div>
-            </article>
+</div>
+</section></div>
+</div>
 
-            <article class="project-card">
-              <span class="project-card__status">In progress</span>
-              <h4 class="project-card__title">Instagram Scraper</h4>
-              <p class="project-card__meta">Data collection · Pipelines</p>
-              <p class="project-card__text">
-                Collects public Instagram metadata and media for downstream reel analysis and content intelligence pipelines.
-              </p>
-              <ul class="project-card__tags">
-                <li>Python</li><li>Docker</li><li>PostgreSQL</li>
-              </ul>
-              <div class="project-card__actions">
-                <a href="project-docs/instagram-scraper/index.html" class="project-card__link">Deep dive →</a>
-              </div>
-            </article>
+<div class="band">
+<div class="pad"><section class="blk" id="ai">
+<div class="hd f2"><h2>AI &amp; software projects</h2><span class="fname">Petit Formal Script</span></div>
+<div class="cards">
 
-            <article class="project-card">
-              <span class="project-card__status">In progress</span>
-              <h4 class="project-card__title">Instagram Reel LLM Analyzer</h4>
-              <p class="project-card__meta">Multimodal · Whisper · LLMs</p>
-              <p class="project-card__text">
-                Transcribes reel audio, summarizes content, and answers questions about trends and themes using LLM orchestration.
-              </p>
-              <ul class="project-card__tags">
-                <li>Whisper</li><li>LangChain</li><li>Hugging Face</li>
-              </ul>
-              <div class="project-card__actions">
-                <a href="project-docs/instagram-reel-llm/index.html" class="project-card__link">Deep dive →</a>
-              </div>
-            </article>
+<article class="cd">
+<div class="sh"><img src="assets/project-rag.png" alt="AI mortgage document processing pipeline"></div>
+<span class="when">Jan 2026 – Jun 2026</span>
+<h3>AI Mortgage Document Processing Pipeline</h3>
+<p class="desc">Designed an end-to-end document intelligence pipeline ingesting 200+ page mortgage files and applying multi-stage Python data processing (Tesseract, PaddleOCR, PyMuPDF) to normalize encoding, strip noise, and standardize text across scanned and digital formats before structuring content into a consistent, queryable format. Engineered a RAG-based retrieval layer using LlamaIndex, BM25 keyword search, and a cross-encoder reranker to improve semantic search accuracy across mixed-format financial documents, with Gemini powering answer generation over the structured document corpus. Delivered a FastAPI backend exposing ingestion and query endpoints, enabling structured, auditable access to unstructured mortgage document data.</p>
+<a class="repo" href="https://github.com/MeganMulcahy/RAG-Pipeline-using-LlamaIndex">View on GitHub</a>
+</article>
 
-            <article class="project-card">
-              <span class="project-card__status">Ongoing</span>
-              <h4 class="project-card__title">Machine Learning Projects</h4>
-              <p class="project-card__meta">Experiments · Evaluation</p>
-              <p class="project-card__text">
-                Applied ML work — classification, embeddings, model comparison, and evaluation supporting AI engineering depth.
-              </p>
-              <ul class="project-card__tags">
-                <li>scikit-learn</li><li>Hugging Face</li><li>Ollama</li>
-              </ul>
-              <div class="project-card__actions">
-                <a href="project-docs/ml-projects/index.html" class="project-card__link">Deep dive →</a>
-              </div>
-            </article>
-          </div>
-        </div>
+<article class="cd">
+<div class="sh"><img src="assets/project-portal.png" alt="PhD student data collection portal"></div>
+<span class="when">Jan 2026 – May 2026</span>
+<h3>PhD Student Data Collection Portal</h3>
+<p class="desc">A full-stack web application for collecting and reviewing PhD student research records (papers, presentations, and awards) with role-based access for students and faculty administrators. The frontend is React connected to a Node.js REST API backend, with structured endpoints and service logic supporting clean data flow across the application. Google Cloud SQL (PostgreSQL) handles secure, persistent data storage with relational queries optimized for performance. Docker containerization ensures consistent environments across development and production.</p>
+<a class="repo" href="https://github.com/MeganMulcahy/CS-PhD-Student-Data-Collection-Portal">View on GitHub</a>
+</article>
 
-        <div class="project-group">
-          <h3 class="project-group__title">Enterprise · Mercedes-Benz U.S. International</h3>
-          <div class="project-grid">
-            <article class="project-card">
-              <h4 class="project-card__title">Power BI License Dashboard</h4>
-              <p class="project-card__meta">Power BI · DAX · SQL · SharePoint</p>
-              <p class="project-card__text">
-                Replaced scattered Excel trackers and SharePoint lists with a unified executive dashboard giving IT leadership
-                real-time visibility into Microsoft license inventory, department allocation, and utilization. Built advanced DAX
-                measures across SQL- and cloud-connected datasets so the team could spot overspend and redeploy unused seats before renewal cycles.
-              </p>
-              <ul class="project-card__tags">
-                <li>Power BI</li><li>DAX</li><li>SQL</li><li>SharePoint</li>
-              </ul>
-              <div class="project-card__actions">
-                <a href="project-docs/power-bi-license/index.html" class="project-card__link">Deep dive →</a>
-              </div>
-            </article>
-            <article class="project-card">
-              <h4 class="project-card__title">Power BI Compliance Dashboard</h4>
-              <p class="project-card__meta">Compliance reporting · Drill-through · Audit readiness</p>
-              <p class="project-card__text">
-                Gave compliance and IT stakeholders a single view of license expiration risk, overdue renewals, and audit readiness—
-                replacing manual spreadsheet reviews before leadership meetings. Designed drill-through pages and dynamic slicers so
-                managers could trace any license from summary KPIs down to individual seat assignments during internal audits.
-              </p>
-              <ul class="project-card__tags">
-                <li>Power BI</li><li>DAX</li><li>Compliance KPIs</li>
-              </ul>
-              <div class="project-card__actions">
-                <a href="project-docs/power-bi-compliance/index.html" class="project-card__link">Deep dive →</a>
-              </div>
-            </article>
-            <article class="project-card">
-              <h4 class="project-card__title">Power Apps SLA/PO Workflow</h4>
-              <p class="project-card__meta">Power Apps · Power Automate · SharePoint</p>
-              <p class="project-card__text">
-                Eliminated email-based SLA and purchase-order approvals that were slow to track and easy to lose. Built a Power Apps
-                front end with Automate flows that route requests to the right approvers, send status notifications, and log every
-                decision in SharePoint with timestamps—shortening approval cycles and giving logistics clear visibility into open POs.
-              </p>
-              <ul class="project-card__tags">
-                <li>Power Apps</li><li>Power Automate</li><li>SharePoint</li>
-              </ul>
-              <div class="project-card__actions">
-                <a href="project-docs/power-apps-sla/index.html" class="project-card__link">Deep dive →</a>
-              </div>
-            </article>
-            <article class="project-card">
-              <h4 class="project-card__title">Power Apps Audit &amp; Task Tracker</h4>
-              <p class="project-card__meta">Power Apps · Power Automate · Cross-department</p>
-              <p class="project-card__text">
-                Replaced ad hoc email reminders for IT audit work with a department-wide tracker for recurring compliance tasks.
-                The app assigns owners, sends automated follow-ups, and preserves full task history so audits no longer depend on
-                individual inboxes—improving accountability across IT and supporting teams ahead of review periods.
-              </p>
-              <ul class="project-card__tags">
-                <li>Power Apps</li><li>Power Automate</li><li>SharePoint</li>
-              </ul>
-              <div class="project-card__actions">
-                <a href="project-docs/power-apps-audit/index.html" class="project-card__link">Deep dive →</a>
-              </div>
-            </article>
-          </div>
-        </div>
+</div>
+</section></div>
+</div>
 
-        <div class="project-group">
-          <h3 class="project-group__title">Systems &amp; language implementation</h3>
-          <div class="project-grid">
-            <article class="project-card">
-              <h4 class="project-card__title">Lox Interpreter</h4>
-              <p class="project-card__meta">C# · Scanner · Parser · AST evaluation</p>
-              <p class="project-card__text">
-                Implemented a complete programming language interpreter from scratch—lexical analysis, recursive-descent parsing,
-                tree-walk evaluation, closures, and first-class functions. Demonstrates how source code becomes executable behavior:
-                scope resolution, call stacks, and runtime environments—not just calling library APIs.
-              </p>
-              <ul class="project-card__tags">
-                <li>C#</li><li>Parsing</li><li>Environments</li><li>Closures</li>
-              </ul>
-              <div class="project-card__actions">
-                <a href="Projects/Lox Interpreter Web/indexLox.html" target="_blank" rel="noopener noreferrer" class="project-card__link">Demo →</a>
-              </div>
-            </article>
-            <article class="project-card">
-              <h4 class="project-card__title">Lisp Interpreter</h4>
-              <p class="project-card__meta">C# · S-expressions · Eval/apply</p>
-              <p class="project-card__text">
-                Built a Lisp dialect interpreter handling S-expression parsing, special forms, and recursive evaluation—the same
-                eval/apply model used in symbolic AI and language tooling. Shows understanding of how languages represent data and
-                code as structured trees in memory.
-              </p>
-              <ul class="project-card__tags">
-                <li>C#</li><li>Functional eval</li><li>Symbolic computation</li>
-              </ul>
-              <div class="project-card__actions">
-                <a href="Projects/Lisp Interpreter/indexLisp.html" target="_blank" rel="noopener noreferrer" class="project-card__link">Demo →</a>
-              </div>
-            </article>
-          </div>
-        </div>
+<div class="band">
+<div class="pad"><section class="blk" id="skills">
+<div class="hd f3"><h2>Core skills</h2><span class="fname">Sacramento</span></div>
+<div class="skills">
+<div><h3>Data engineering</h3><p>SQL, Python, dbt, Data Modeling, ETL/ELT, Power Query, Multi-Source Integration, Semantic Data Modeling</p></div>
+<div><h3>Cloud &amp; infrastructure</h3><p>PostgreSQL, GCP, Google Cloud SQL, Azure (familiar), Docker, Linux, MySQL</p></div>
+<div><h3>Visualization &amp; reporting</h3><p>Power BI, DAX, Tableau (learning), Matplotlib</p></div>
+<div><h3>Languages &amp; tools</h3><p>Python, SQL, JavaScript, Java, Node.js, React, FastAPI, Git, Power Automate, SAP</p></div>
+</div>
+</section></div>
+</div>
 
-        <div class="project-group">
-          <h3 class="project-group__title">Academic projects</h3>
-          <div class="project-grid">
-            <article class="project-card">
-              <h4 class="project-card__title">CS PhD Student Data Portal</h4>
-              <p class="project-card__meta">React · Node.js · PostgreSQL · REST API</p>
-              <p class="project-card__text">
-                Web application for the CS department to collect PhD student data each semester—publications, conference talks,
-                awards, teaching, and research milestones—replacing manual email submissions and inconsistent spreadsheets. Delivered
-                role-based forms, validated backend APIs, and persistent storage so faculty administrators can query and export
-                department records on demand.
-              </p>
-              <ul class="project-card__tags">
-                <li>React</li><li>Node.js</li><li>PostgreSQL</li><li>REST API</li>
-              </ul>
-              <div class="project-card__actions">
-                <a href="project-docs/cs-phd-portal/index.html" class="project-card__link">Deep dive →</a>
-              </div>
-            </article>
-            <article class="project-card">
-              <h4 class="project-card__title">ChocAn Data Center</h4>
-              <p class="project-card__meta">Java · OOP · UML · Team software engineering</p>
-              <p class="project-card__text">
-                Four-person team project simulating a healthcare data center: member and provider management, service records,
-                weekly billing reports, EFT file generation, and separate terminal interfaces for managers, providers, and operators.
-                Applied UML design, modular Java architecture, file-based persistence, and JUnit testing for a production-style deliverable.
-              </p>
-              <ul class="project-card__tags">
-                <li>Java</li><li>UML</li><li>JUnit</li><li>File I/O</li>
-              </ul>
-              <div class="project-card__actions">
-                <a href="Projects/ChocAn/ChocAn/indexChocAn.html" target="_blank" rel="noopener noreferrer" class="project-card__link">Demo →</a>
-                <a href="project-docs/chocan/index.html" class="project-card__link project-card__link--secondary">Deep dive →</a>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SKILLS — pills + grouped lists -->
-    <section id="skills" class="section-main">
-      <div class="container-main">
-        <header class="section-head section-head--narrow">
-          <p class="section-eyebrow">Capabilities</p>
-          <h2 class="section-heading">Skills &amp; stack</h2>
-          <p class="section-lead">
-            Aligned with my
-            <a href="https://github.com/MeganMulcahy" target="_blank" rel="noopener noreferrer">GitHub</a>
-            profile — Python-first AI engineering, system design, and CS fundamentals from the metal up.
-          </p>
-        </header>
-
-        <div class="skills-layout">
-          <div class="skills-block">
-            <h3 class="skills-block__title">Languages</h3>
-            <p class="skills-block__hint">Strongest first</p>
-            <ul class="skill-pills">
-              <li class="skill-pill--primary">Python</li>
-              <li class="skill-pill--primary">Java</li>
-              <li class="skill-pill--primary">HTML/CSS</li>
-              <li class="skill-pill--primary">SQL</li>
-            </ul>
-            <p class="skills-block__subhead">Also experienced with</p>
-            <ul class="skill-pills skill-pills--muted">
-              <li>C++</li><li>C#</li><li>Swift</li><li>MATLAB</li><li>Assembly/C</li>
-            </ul>
-          </div>
-
-          <div class="skills-block">
-            <h3 class="skills-block__title">AI / ML</h3>
-            <ul class="skill-pills">
-              <li>LlamaIndex</li><li>LangChain</li><li>Google Gemini</li><li>OpenAI</li>
-              <li>Ollama</li><li>Hugging Face</li><li>Whisper</li><li>ChromaDB</li>
-              <li>RAGAs</li><li>sentence-transformers</li><li>PyMuPDF</li><li>PaddleOCR</li>
-              <li>RAG</li><li>scikit-learn</li>
-            </ul>
-          </div>
-
-          <div class="skills-block">
-            <h3 class="skills-block__title">Infra &amp; backend</h3>
-            <ul class="skill-pills">
-              <li>FastAPI</li><li>PostgreSQL</li><li>Docker</li>
-              <li>Google Cloud</li><li>Linux</li><li>Git</li>
-            </ul>
-          </div>
-
-          <div class="skills-block">
-            <h3 class="skills-block__title">System design &amp; CS foundations</h3>
-            <ul class="skill-pills">
-              <li>System design</li><li>API architecture</li><li>Data pipelines</li>
-              <li>Memory &amp; pointers</li><li>Assembly/C</li><li>Compilers &amp; interpreters</li>
-              <li>Operating systems</li><li>Algorithms</li>
-            </ul>
-          </div>
-
-          <div class="skills-block skills-block--wide">
-            <h3 class="skills-block__title">Other tools</h3>
-            <ul class="skill-pills">
-              <li>Power Platform</li><li>Power BI</li><li>Power Automate</li>
-              <li>Power Apps</li><li>VS Code</li><li>Cursor</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section-main section-main--muted">
-      <div class="container-main container-main--narrow">
-        <div class="contact-panel">
-          <p class="section-eyebrow section-eyebrow--on-dark">Contact</p>
-          <h2 class="contact-panel__title">Let’s connect</h2>
-          <a class="contact-panel__email" href="mailto:megan.mulcahy03@gmail.com">megan.mulcahy03@gmail.com</a>
-          <div class="contact-panel__social">
-            <a href="https://www.linkedin.com/in/meganmulcahy/" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="LinkedIn">
-              <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            </a>
-            <a href="https://github.com/MeganMulcahy" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="GitHub">
-              <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.31 24 12c0-6.63-5.37-12-12-12z"/></svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer id="footer" class="site-footer">
-    <div class="container-main site-footer__inner">
-      <p class="site-footer__copy">&copy; <span id="year"></span> Megan Mulcahy</p>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+<div class="pad">
+<section class="end" id="contact">
+<h2>Open to AI and data engineering roles in Dallas</h2>
+<div class="l"><a href="mailto:megan.mulcahy03@gmail.com">megan.mulcahy03@gmail.com</a><a href="tel:+14693283133">469-328-3133</a><a href="https://linkedin.com/in/meganmulcahy">linkedin.com/in/meganmulcahy</a><a href="https://github.com/MeganMulcahy">github.com/MeganMulcahy</a></div>
+</section>
+<footer><span>Megan Mulcahy</span><span>B.S. Computer Science 2026 · MBA 2027, The University of Alabama</span></footer>
+</div>
+<script src="main.js"></script>
 </body>
 </html>

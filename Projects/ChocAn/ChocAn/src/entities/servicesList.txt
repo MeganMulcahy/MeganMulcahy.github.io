@@ -1,9 +1,0 @@
-138639,Physical Therapy,100
-247385,Chocolate Therapy,200
-338294,White Chocolate and Me,300
-445865,Milk (chocolate) Diets,400
-598470,Dietitian Consult,500
-654514,Healthy Eats,600
-714514,PTSD Counseling,700
-883948,Aerobics Session,800
-948548,Cheat Day,900

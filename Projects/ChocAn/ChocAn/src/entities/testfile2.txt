@@ -1,6 +1,0 @@
-Eli Scales,123456,$4.50
-Alex Montgomery,234567,$3.25
-Logan Hay,345678,$5.75
-Megan Mulcahy,456789,$12.25
-Brooke Boskus,567890,$25.50
-Abdelmonem Ahmed,678901,$9.95
