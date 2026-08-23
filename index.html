@@ -6,106 +6,117 @@
 <title>Megan Mulcahy — Data Engineer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Allura&family=Parisienne&family=Petit+Formal+Script&family=Sacramento&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="pad">
-<header style="position:relative"><div class="mk">Megan Mulcahy</div><nav><a href="#data">Enterprise Data projects</a><a href="#ai">AI &amp; software</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav></header>
-</div>
-
-<div class="pad" style="position:relative">
+<div class="navwrap"><nav class="pill"><a href="#about">About</a><a href="#work">Enterprise data projects</a><a href="#ai">Software projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav></div>
 <section class="hero">
+<div class="in">
+<div class="est up"><span>B.S. CS 2026</span><span>MBA 2027</span></div>
 <h1>Megan Mulcahy</h1>
-<p class="eye">SQL · Python · Data pipelines · Analytics engineer · Dallas</p>
-<div class="txt">
-<div class="rule"></div>
-<p class="lede">I build data pipelines and integration layers that turn messy, multi-source enterprise data into reliable, queryable reporting, with production co-op experience at Mercedes-Benz U.S. International.</p>
-<div class="btns"><a href="mailto:megan.mulcahy03@gmail.com">Get in touch</a><a href="https://github.com/MeganMulcahy">GitHub</a><a href="https://linkedin.com/in/meganmulcahy">LinkedIn</a></div>
+<p class="tag">data &amp; analytics engineering<br></p>
+<div class="btns"><a class="btn" href="https://linkedin.com/in/meganmulcahy">LinkedIn</a><a class="btn" href="https://github.com/MeganMulcahy">Github</a></div>
+</div>
+<div class="foot">SQL · Python · Data pipelines</div>
+</section>
+
+<div class="wrap">
+<section class="sect" id="about">
+<h2 class="caps">About</h2>
+<p class="lede">I build <strong>data pipelines and integration layers</strong> that turn messy, multi-source enterprise data into reliable, queryable reporting, with <strong>production experience at Mercedes-Benz U.S. International.</strong></p>
+</section>
+
+
+<section class="block">
+<h2 class="caps">In production</h2>
+<div class="grid4">
+<div><b>5+</b><span>Power BI dashboards running in production at Mercedes-Benz U.S. International</span></div>
+<div><b>15+</b><span>Disparate enterprise sources integrated into a single reporting layer</span></div>
+<div><b>60%+</b><span>Reduction in manual data processing through automated pipelines</span></div>
 </div>
 </section>
-</div>
 
-<div class="band">
-<div class="pad inset"><section class="blk" id="data">
-<div class="hd"><h2>Enterprise data projects</h2><span class="fname">Parisienne</span></div>
-<div class="cards">
+<section class="sect" id="work"><h2 class="caps">Enterprise data projects<br>at Mercedes-Benz</h2></section>
+<div class="rows">
 
-<article class="cd">
+<article class="row">
 <div class="sh"><img src="assets/project-sla.png" alt="SLA cost and procurement data model dashboard"></div>
+<div>
 <span class="when">Jan 2025 – Aug 2025</span>
 <h3>SLA Cost &amp; Procurement Data Model</h3>
-<p class="desc">Integrated Service Level Agreements (SLAs), Purchase Requisitions (PRs), and Purchase Orders (POs) across C4MB, cbFC, and SAP into a unified Power BI cost tracking data model, establishing pricing transparency, payment accuracy, and manager accountability across three systems that had never shared structured data. Engineered the SLA-to-PR matching logic from scratch by parsing SLA codes manually appended to cbFC PR short text fields, splitting and extracting them during export to match against C4MB agreement records, with each SLA and associated PR mapped to the responsible E3. Implemented EUR/USD currency conversion using a monthly exchange rate key file indexed by agreement creation date, enabling accurate cost comparison across contracts with mixed currency terms. Delivered a scalable, scheduled-refresh reporting solution used in daily governance meetings to track SLA completion status, forecast vs. actual cost progression, and approved volume by agreement.</p>
+<p>Integrated Service Level Agreements (SLAs), Purchase Requisitions (PRs), and Purchase Orders (POs) across C4MB, cbFC, and SAP into a unified Power BI cost tracking data model, establishing pricing transparency, payment accuracy, and manager accountability across three systems that had never shared structured data. Engineered the SLA-to-PR matching logic from scratch by parsing SLA codes manually appended to cbFC PR short text fields, splitting and extracting them during export to match against C4MB agreement records, with each SLA and associated PR mapped to the responsible E3. Implemented EUR/USD currency conversion using a monthly exchange rate key file indexed by agreement creation date, enabling accurate cost comparison across contracts with mixed currency terms. Delivered a scalable, scheduled-refresh reporting solution used in daily governance meetings to track SLA completion status, forecast vs. actual cost progression, and approved volume by agreement.</p>
+</div>
 </article>
 
-<article class="cd">
+<article class="row">
 <div class="sh"><img src="assets/project-container.png" alt="Supply chain container tracking dashboard"></div>
+<div>
 <span class="when">Sep 2024 – Dec 2024</span>
 <h3>Supply Chain Container Tracking Pipeline</h3>
-<p class="desc">Created the container tracking capability that gave supply chain and logistics teams near real-time visibility across the full automotive logistics pipeline (inbound shipment origin through port of entry, customs clearance, inbound transfer, yard positioning, and final warehouse destination at MBUSI) by integrating structured data from internal SQL databases with external ICL systems. Designed and engineered a unified data model to consolidate heterogeneous, multi-source datasets, enabling scalable data aggregation and consistent business logic across shipping events, container status updates, and part-level identifiers. Implemented optimized data transformation and query pipelines to improve refresh performance and enable near real-time observability of logistics workflows. Delivered interactive, decision-support visualizations to enhance operational intelligence, supporting faster data-driven decision-making and improved supply chain visibility.</p>
+<p>Created the container tracking capability that gave supply chain and logistics teams near real-time visibility across the full automotive logistics pipeline (inbound shipment origin through port of entry, customs clearance, inbound transfer, yard positioning, and final warehouse destination at MBUSI) by integrating structured data from internal SQL databases with external ICL systems. Designed and engineered a unified data model to consolidate heterogeneous, multi-source datasets, enabling scalable data aggregation and consistent business logic across shipping events, container status updates, and part-level identifiers. Implemented optimized data transformation and query pipelines to improve refresh performance and enable near real-time observability of logistics workflows. Delivered interactive, decision-support visualizations to enhance operational intelligence, supporting faster data-driven decision-making and improved supply chain visibility.</p>
+</div>
 </article>
 
-<article class="cd">
+<article class="row">
 <div class="sh"><img src="assets/project-license.png" alt="License and compliance analytics dashboard"></div>
+<div>
 <span class="when">Jan 2025 – May 2025</span>
 <h3>License &amp; Compliance Analytics Integration</h3>
-<p class="desc">Centralized software license management and utilization tracking into an enterprise analytics dashboard structured around E3 licensing, with drill-down capabilities into publishers, products, end users, and associated cost drivers. Engineered a unified data layer by integrating and cleansing data from 15+ disparate enterprise sources, ensuring consistent schema alignment and reliable reporting across systems. Implemented scalable data modeling and transformation logic to support near real-time visibility into license consumption and allocation. Delivered actionable analytics enabling leadership to identify cost optimization opportunities, reduce underutilized licenses, and improve vendor accountability through data-driven decision-making.</p>
+<p>Centralized software license management and utilization tracking into an enterprise analytics dashboard structured around E3 licensing, with drill-down capabilities into publishers, products, end users, and associated cost drivers. Engineered a unified data layer by integrating and cleansing data from 15+ disparate enterprise sources, ensuring consistent schema alignment and reliable reporting across systems. Implemented scalable data modeling and transformation logic to support near real-time visibility into license consumption and allocation. Delivered actionable analytics enabling leadership to identify cost optimization opportunities, reduce underutilized licenses, and improve vendor accountability through data-driven decision-making.</p>
+</div>
 </article>
 
-<article class="cd">
+<article class="row">
 <div class="sh"><img src="assets/project-approval.png" alt="PR/SLA approval and governance app"></div>
+<div>
 <span class="when">Jan 2025 – Aug 2025</span>
 <h3>PR/SLA Approval &amp; Governance App</h3>
-<p class="desc">Automated the SLA-to-PO approval tracking workflow that feeds CEO-level financial reporting at MBUSI, linking Service Level Agreements (SLAs) to Purchase Orders (POs) by integrating and standardizing data from C4MB and cbFC into a unified, query-driven reporting layer. Replaced repeated manual exports and error-prone data stitching with standardized transformation rules and an automated pipeline, establishing this as the new organizational standard for SLA approval input and reporting. Designed relational data logic using agreement-level identifiers to connect previously siloed financial and operational datasets, enabling consistent tracking of approvals, budget status, and SLA execution. Delivered a scalable, near real-time reporting solution centralizing financial and operational performance visibility for executive decision-making.</p>
+<p>Automated the SLA-to-PO approval tracking workflow that feeds CEO-level financial reporting at MBUSI, linking Service Level Agreements (SLAs) to Purchase Orders (POs) by integrating and standardizing data from C4MB and cbFC into a unified, query-driven reporting layer. Replaced repeated manual exports and error-prone data stitching with standardized transformation rules and an automated pipeline, establishing this as the new organizational standard for SLA approval input and reporting. Designed relational data logic using agreement-level identifiers to connect previously siloed financial and operational datasets, enabling consistent tracking of approvals, budget status, and SLA execution. Delivered a scalable, near real-time reporting solution centralizing financial and operational performance visibility for executive decision-making.</p>
+</div>
 </article>
 
 </div>
-</section></div>
-</div>
 
-<div class="band">
-<div class="pad"><section class="blk" id="ai">
-<div class="hd f2"><h2>AI &amp; software projects</h2><span class="fname">Petit Formal Script</span></div>
-<div class="cards">
 
-<article class="cd">
+<section class="sect" id="ai"><h2 class="caps">Software projects</h2></section>
+<div class="rows">
+
+<article class="row">
 <div class="sh"><img src="assets/project-rag.png" alt="AI mortgage document processing pipeline"></div>
+<div>
 <span class="when">Jan 2026 – Jun 2026</span>
 <h3>AI Mortgage Document Processing Pipeline</h3>
-<p class="desc">Designed an end-to-end document intelligence pipeline ingesting 200+ page mortgage files and applying multi-stage Python data processing (Tesseract, PaddleOCR, PyMuPDF) to normalize encoding, strip noise, and standardize text across scanned and digital formats before structuring content into a consistent, queryable format. Engineered a RAG-based retrieval layer using LlamaIndex, BM25 keyword search, and a cross-encoder reranker to improve semantic search accuracy across mixed-format financial documents, with Gemini powering answer generation over the structured document corpus. Delivered a FastAPI backend exposing ingestion and query endpoints, enabling structured, auditable access to unstructured mortgage document data.</p>
+<p>Designed an end-to-end document intelligence pipeline ingesting 200+ page mortgage files and applying multi-stage Python data processing (Tesseract, PaddleOCR, PyMuPDF) to normalize encoding, strip noise, and standardize text across scanned and digital formats before structuring content into a consistent, queryable format. Engineered a RAG-based retrieval layer using LlamaIndex, BM25 keyword search, and a cross-encoder reranker to improve semantic search accuracy across mixed-format financial documents, with Gemini powering answer generation over the structured document corpus. Delivered a FastAPI backend exposing ingestion and query endpoints, enabling structured, auditable access to unstructured mortgage document data.</p>
 <a class="repo" href="https://github.com/MeganMulcahy/RAG-Pipeline-using-LlamaIndex">View on GitHub</a>
+</div>
 </article>
 
-<article class="cd">
+<article class="row">
 <div class="sh"><img src="assets/project-portal.png" alt="PhD student data collection portal"></div>
+<div>
 <span class="when">Jan 2026 – May 2026</span>
 <h3>PhD Student Data Collection Portal</h3>
-<p class="desc">A full-stack web application for collecting and reviewing PhD student research records (papers, presentations, and awards) with role-based access for students and faculty administrators. The frontend is React connected to a Node.js REST API backend, with structured endpoints and service logic supporting clean data flow across the application. Google Cloud SQL (PostgreSQL) handles secure, persistent data storage with relational queries optimized for performance. Docker containerization ensures consistent environments across development and production.</p>
+<p>A full-stack web application for collecting and reviewing PhD student research records (papers, presentations, and awards) with role-based access for students and faculty administrators. The frontend is React connected to a Node.js REST API backend, with structured endpoints and service logic supporting clean data flow across the application. Google Cloud SQL (PostgreSQL) handles secure, persistent data storage with relational queries optimized for performance. Docker containerization ensures consistent environments across development and production.</p>
 <a class="repo" href="https://github.com/MeganMulcahy/CS-PhD-Student-Data-Collection-Portal">View on GitHub</a>
+</div>
 </article>
 
 </div>
-</section></div>
-</div>
 
-<div class="band">
-<div class="pad"><section class="blk" id="skills">
-<div class="hd f3"><h2>Core skills</h2><span class="fname">Sacramento</span></div>
-<div class="skills">
+
+<section class="skills" id="skills">
 <div><h3>Data engineering</h3><p>SQL, Python, dbt, Data Modeling, ETL/ELT, Power Query, Multi-Source Integration, Semantic Data Modeling</p></div>
 <div><h3>Cloud &amp; infrastructure</h3><p>PostgreSQL, GCP, Google Cloud SQL, Azure (familiar), Docker, Linux, MySQL</p></div>
 <div><h3>Visualization &amp; reporting</h3><p>Power BI, DAX, Tableau (learning), Matplotlib</p></div>
 <div><h3>Languages &amp; tools</h3><p>Python, SQL, JavaScript, Java, Node.js, React, FastAPI, Git, Power Automate, SAP</p></div>
-</div>
-</section></div>
-</div>
+</section>
 
-<div class="pad">
 <section class="end" id="contact">
-<h2>Open to AI and data engineering roles in Dallas</h2>
+<h2 class="caps">Open to data &amp; analytic engineering roles in Dallas</h2>
 <div class="l"><a href="mailto:megan.mulcahy03@gmail.com">megan.mulcahy03@gmail.com</a><a href="tel:+14693283133">469-328-3133</a><a href="https://linkedin.com/in/meganmulcahy">linkedin.com/in/meganmulcahy</a><a href="https://github.com/MeganMulcahy">github.com/MeganMulcahy</a></div>
 </section>
-<footer><span>Megan Mulcahy</span><span>B.S. Computer Science 2026 · MBA 2027, The University of Alabama</span></footer>
+<footer><span>Megan Mulcahy</span><span>B.S. Computer Science 2026 · MBA 2027</span></footer>
 </div>
 <script src="main.js"></script>
 </body>
